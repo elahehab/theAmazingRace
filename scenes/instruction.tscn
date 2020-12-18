@@ -1,0 +1,263 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/images/Amazing Race Logo.jpg" type="Texture" id=1]
+[ext_resource path="res://assets/images/virtualTB.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/instructionHeader1.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/tahoma20.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/images/Pen.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/Notebook.png" type="Texture" id=6]
+[ext_resource path="res://scripts/readyBtn.gd" type="Script" id=7]
+[ext_resource path="res://assets/images/readyBtn.png" type="Texture" id=8]
+
+[sub_resource type="Animation" id=1]
+resource_name = "leftToRight"
+length = 23.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("txt:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 300, 414.055 ), Vector2( 300, 414.055 ), Vector2( 520, 414.055 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("txt:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 8, 9.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 0.270588, 0.270588, 0.270588, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 8, 9.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.270588, 0.270588, 0.270588, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("instructionHeader:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 9, 11 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 514.003, -96.5596 ), Vector2( 514.003, -96.5596 ), Vector2( 514.003, 88.4404 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("RichTextLabel:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 12, 14 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 47.9999, 312.971 ), Vector2( 47.9999, 180.971 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("RichTextLabel:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 12, 13.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("pen:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 16, 18 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("penLabel:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 16, 18 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("paper:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 16, 18 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("paperLabel:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 16, 18 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Button:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Button/Sprite:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 20, 23 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="instruction" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.270588, 0.270588, 0.270588, 1 )
+scale = Vector2( 1, 1.05786 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="txt" type="Sprite" parent="."]
+modulate = Color( 0.270588, 0.270588, 0.270588, 1 )
+position = Vector2( 520, 414.055 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "leftToRight"
+anims/leftToRight = SubResource( 1 )
+
+[node name="instructionHeader" type="Sprite" parent="."]
+position = Vector2( 514.003, 88.4404 )
+texture = ExtResource( 3 )
+
+[node name="instructionTxt" type="Sprite" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 47.9999
+margin_top = 180.971
+margin_right = 980.0
+margin_bottom = 562.971
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[fill]The Race across the world starts with you, as we begin our journey together; here is a simple short briefing on what you would be expecting today!
+
+The theme for the Amazing Race is all about TEAMWORK! As you travel around the world together, the challenges and activities you will face... Are needed to be faced as a team! There will be both physical and mental elements that aim to challenge your team into being the very best.
+
+Your objective for this race is very simple, be the fastest team to complete the Amazing Race toghether! A facilitator will be with you to conduct this whole Race in your Zoom Breakout Rooms. When you chose to begin, the timer will start!
+
+Before we start, please prepare these two items:[/fill]"
+text = "The Race across the world starts with you, as we begin our journey together; here is a simple short briefing on what you would be expecting today!
+
+The theme for the Amazing Race is all about TEAMWORK! As you travel around the world together, the challenges and activities you will face... Are needed to be faced as a team! There will be both physical and mental elements that aim to challenge your team into being the very best.
+
+Your objective for this race is very simple, be the fastest team to complete the Amazing Race toghether! A facilitator will be with you to conduct this whole Race in your Zoom Breakout Rooms. When you chose to begin, the timer will start!
+
+Before we start, please prepare these two items:"
+scroll_active = false
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 38.0
+margin_top = 181.0
+margin_right = 987.0
+margin_bottom = 532.0
+custom_fonts/font = ExtResource( 4 )
+text = "The Race across the world starts with you, as we begin our journey together; here is a simple short briefing on what you would be expecting today!
+
+The theme for the Amazing Race is all about TEAMWORK! As you travel around the world together, the challenges and activities you will face... Are needed to be faced as a team! There will be both physical and mental elements that aim to challenge your team into being the very best.
+
+Your objective for this race is very simple, be the fastest team to complete the Amazing Race toghether! A facilitator will be with you to conduct this whole Race in your Zoom Breakout Rooms. When you chose to begin, the timer will start!
+
+Before we start, please prepare these two items:"
+autowrap = true
+
+[node name="pen" type="Sprite" parent="."]
+position = Vector2( 597.924, 507.22 )
+scale = Vector2( 0.20217, 0.20217 )
+texture = ExtResource( 5 )
+
+[node name="paper" type="Sprite" parent="."]
+position = Vector2( 748.614, 505.713 )
+scale = Vector2( 0.225722, 0.225722 )
+texture = ExtResource( 6 )
+
+[node name="penLabel" type="Label" parent="."]
+margin_left = 591.463
+margin_top = 559.522
+margin_right = 640.463
+margin_bottom = 591.522
+custom_fonts/font = ExtResource( 4 )
+text = "Pen"
+
+[node name="paperLabel" type="Label" parent="."]
+margin_left = 687.567
+margin_top = 562.238
+margin_right = 831.567
+margin_bottom = 588.238
+custom_fonts/font = ExtResource( 4 )
+text = "Notebook/Paper"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 837.132
+margin_top = 476.595
+margin_right = 998.132
+margin_bottom = 575.595
+flat = true
+script = ExtResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="Button"]
+position = Vector2( 80.8127, 48.9886 )
+scale = Vector2( 0.55564, 0.55564 )
+texture = ExtResource( 8 )
+hframes = 2
+[connection signal="mouse_entered" from="Button" to="Button" method="_on_Button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="Button" method="_on_Button_mouse_exited"]
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

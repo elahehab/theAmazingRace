@@ -1,0 +1,477 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/RouteInfo.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/Amazing Race Title.png" type="Texture" id=2]
+[ext_resource path="res://assets/new_gradienttexture.tres" type="Texture" id=3]
+[ext_resource path="res://assets/images/Route Info-2.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/RouteInfoSmall.png" type="Texture" id=5]
+[ext_resource path="res://assets/fonts/tahoma20.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/fonts/impact.tres" type="DynamicFont" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "startAnim"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Route Info-2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 56.8149, 301.997 ), Vector2( 199.815, 301.997 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Route Info-2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ColorRect2:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 130.522, 65 ), Vector2( 130.522, 65 ), Vector2( 393.522, 65 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Label:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 187.163, 65.9466 ), Vector2( 187.163, 65.9466 ), Vector2( 450.163, 65.9466 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Label:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ColorRect2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 4, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect3:rect_position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 4.6, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 537.357, 65 ), Vector2( 537.357, 65 ), Vector2( 711.357, 65 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Label2:rect_position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 4.6, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 590.998, 65.9466 ), Vector2( 590.998, 65.9466 ), Vector2( 764.998, 65.9466 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Label2:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 4.6, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ColorRect3:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 4.6, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ColorRect4:rect_position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 5, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 325, 303 ), Vector2( 489, 303 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("ColorRect4:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Label3:rect_position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 5, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 415.904, 303.81 ), Vector2( 579.904, 303.81 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Label3:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("RouteInfoSmall:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 6.3, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 534.941, 165.912 ), Vector2( 534.941, 177.912 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("RouteInfoSmall:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 6.3, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("countryLabel:rect_position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 6.3, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 467, 125 ), Vector2( 467, 137 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("countryLabel:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 6.3, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("RouteInfoSmall2:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 6.9, 7.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 841.169, 164.912 ), Vector2( 841.169, 177.912 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("RouteInfoSmall2:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 6.9, 7.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("cityLabel:rect_position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 6.9, 7.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 769, 124 ), Vector2( 769, 137 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("cityLabel:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 6.9, 7.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("monumentLabel:rect_position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 7.7, 8.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 580, 350 ), Vector2( 580, 372 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("monumentLabel:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 7.7, 8.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("RouteInfoSmall3:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 7.7, 8.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 684.092, 421.875 ), Vector2( 684.092, 443.875 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("RouteInfoSmall3:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 7.7, 8.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="RouteInfo" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Amazing Race Title" type="Sprite" parent="."]
+position = Vector2( 671.399, 295.362 )
+scale = Vector2( 1.0794, 1.0794 )
+texture = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 185.413
+margin_right = 1024.41
+margin_bottom = 601.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.729412, 0.729412, 0.729412, 1 )
+position = Vector2( 116.623, 305.109 )
+scale = Vector2( 0.434874, 0.434874 )
+texture = ExtResource( 4 )
+
+[node name="RouteInfoSmall" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 534.941, 177.912 )
+scale = Vector2( 0.251019, 0.251019 )
+texture = ExtResource( 5 )
+
+[node name="countryLabel" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 467.0
+margin_top = 137.0
+margin_right = 616.0
+margin_bottom = 254.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 0 )
+margin_left = 130.522
+margin_top = 65.0
+margin_right = 396.523
+margin_bottom = 122.0
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 187.163
+margin_top = 65.9466
+margin_right = 353.164
+margin_bottom = 118.947
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "COUNTRY"
+
+[node name="RouteInfoSmall2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 841.169, 177.912 )
+scale = Vector2( 0.251019, 0.251019 )
+texture = ExtResource( 5 )
+
+[node name="cityLabel" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 769.0
+margin_top = 137.0
+margin_right = 918.0
+margin_bottom = 254.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ColorRect3" type="ColorRect" parent="." groups=[
+"cityLabel",
+]]
+modulate = Color( 0, 0, 0, 0 )
+margin_left = 537.357
+margin_top = 65.0
+margin_right = 803.357
+margin_bottom = 122.0
+
+[node name="Label2" type="Label" parent="." groups=[
+"cityLabel",
+]]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 590.998
+margin_top = 65.9466
+margin_right = 746.998
+margin_bottom = 118.947
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "CITY"
+align = 1
+
+[node name="RouteInfoSmall3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 684.092, 443.875 )
+scale = Vector2( 0.374294, 0.374294 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( -36.8246, 309.705, 864.646, 569.714 )
+
+[node name="monumentLabel" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 580.0
+margin_top = 372.0
+margin_right = 791.0
+margin_bottom = 489.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 0 )
+margin_left = 489.0
+margin_top = 303.0
+margin_right = 870.999
+margin_bottom = 360.0
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 579.904
+margin_top = 303.81
+margin_right = 781.904
+margin_bottom = 356.81
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "MONUMENT"
+align = 1
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "startAnim"
+anims/startAnim = SubResource( 1 )
+
+[node name="Route Info-2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 56.8149, 301.997 )
+scale = Vector2( 0.309653, 0.309653 )
+texture = ExtResource( 4 )
