@@ -10,4 +10,6 @@ func _ready():
 	get_node("cityLabel").text = get_node("/root/global").cityTxt
 	get_node("monumentLabel").text = get_node("/root/global").monumentTxt
 
-
+func _on_NextSceneBtn_pressed():
+	var nextScene = get_node("/root/global").routeInfoNextScene
+	get_tree().change_scene(nextScene)

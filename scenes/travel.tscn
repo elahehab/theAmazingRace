@@ -1,0 +1,94 @@
+[gd_scene format=2]
+
+[node name="travel" type="Node2D"]
+position = Vector2( -14, 0 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.980392, 0.701961, 0.0784314, 1 )
+margin_right = 1025.0
+margin_bottom = 603.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+modulate = Color( 0.85098, 0.607843, 0.0588235, 1 )
+margin_right = 1041.0
+margin_bottom = 603.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 138.0
+margin_top = -54.0
+margin_right = 192.0
+margin_bottom = 226.0
+rect_rotation = 45.0
+
+[node name="ColorRect11" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 899.0
+margin_top = -54.0
+margin_right = 953.0
+margin_bottom = 912.0
+rect_rotation = 45.0
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 292.0
+margin_top = -56.0
+margin_right = 346.0
+margin_bottom = 473.0
+rect_rotation = 45.0
+
+[node name="ColorRect10" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1053.0
+margin_top = -56.0
+margin_right = 1107.0
+margin_bottom = 932.0
+rect_rotation = 45.0
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 442.0
+margin_top = -53.0
+margin_right = 496.0
+margin_bottom = 664.0
+rect_rotation = 45.0
+
+[node name="ColorRect9" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1054.0
+margin_top = 96.0
+margin_right = 1108.0
+margin_bottom = 886.0
+rect_rotation = 45.0
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 685.0
+margin_top = -144.0
+margin_right = 739.0
+margin_bottom = 921.0
+rect_rotation = 45.0
+
+[node name="ColorRect8" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1055.0
+margin_top = 247.0
+margin_right = 1109.0
+margin_bottom = 759.0
+rect_rotation = 45.0
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 838.0
+margin_top = -144.0
+margin_right = 892.0
+margin_bottom = 921.0
+rect_rotation = 45.0
+
+[node name="ColorRect12" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1054.0
+margin_top = 401.0
+margin_right = 1108.0
+margin_bottom = 695.0
+rect_rotation = 45.0

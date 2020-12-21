@@ -475,3 +475,11 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 56.8149, 301.997 )
 scale = Vector2( 0.309653, 0.309653 )
 texture = ExtResource( 4 )
+
+[node name="NextSceneBtn" type="Button" parent="."]
+margin_left = 944.071
+margin_top = 536.296
+margin_right = 1024.07
+margin_bottom = 597.296
+flat = true
+[connection signal="pressed" from="NextSceneBtn" to="." method="_on_NextSceneBtn_pressed"]

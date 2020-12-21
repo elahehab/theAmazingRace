@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/travelScene.gd" type="Script" id=1]
+[ext_resource path="res://scenes/travel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scenes/Vehicles.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 43
+extra_spacing_char = 2
+font_data = ExtResource( 3 )
+
+[node name="travelScene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="travel" parent="." instance=ExtResource( 2 )]
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 26.3713
+margin_top = 118.936
+margin_right = 148.371
+margin_bottom = 172.936
+rect_rotation = -45.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+text = "TRAVEL"
+
+[node name="plane" parent="." instance=ExtResource( 4 )]
+position = Vector2( 67.9734, 65.4559 )
+
+[node name="train" parent="." instance=ExtResource( 4 )]
+position = Vector2( 375.112, 65.4559 )
+vehicleMode = 2
+
+[node name="walk" parent="." instance=ExtResource( 4 )]
+position = Vector2( 694.839, 65.4559 )
+vehicleMode = 3
+
+[node name="nextSceneBtn" type="Button" parent="."]
+margin_left = 944.075
+margin_top = 551.34
+margin_right = 1024.07
+margin_bottom = 599.34
+flat = true
+[connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]

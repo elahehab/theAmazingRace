@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/cipher.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/pyramid/E3.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/pyramid/E2.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/pyramid/E1.png" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.219608, 0.219608, 0.219608, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.980392, 0.701961, 0.0784314, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.980392, 0.701961, 0.0784314, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 5 )
+
+[node name="cipher" type="Node2D"]
+rotation = -1.5708
+script = ExtResource( 1 )
+
+[node name="E3" type="Sprite" parent="."]
+position = Vector2( -262.993, 353.886 )
+scale = Vector2( 0.433776, 0.433776 )
+texture = ExtResource( 2 )
+
+[node name="E2" type="Sprite" parent="."]
+visible = false
+position = Vector2( -297.002, 517.904 )
+scale = Vector2( 0.433776, 0.433776 )
+texture = ExtResource( 3 )
+
+[node name="E1" type="Sprite" parent="."]
+visible = false
+position = Vector2( -295.394, 517.453 )
+scale = Vector2( 0.433776, 0.433776 )
+texture = ExtResource( 4 )
+
+[node name="closeBtn" type="Button" parent="."]
+margin_left = -4.07172
+margin_top = 675.755
+margin_right = 70.9283
+margin_bottom = 710.755
+rect_rotation = 90.0
+mouse_default_cursor_shape = 2
+custom_styles/hover = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "CLOSE"
+[connection signal="pressed" from="closeBtn" to="." method="_on_closeBtn_pressed"]

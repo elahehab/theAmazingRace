@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/pyramid.gd" type="Script" id=1]
+[ext_resource path="res://scenes/egypt/pyramidBack.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/images/pyramid/Egyptian Woman.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 74
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 23
+font_data = ExtResource( 5 )
+
+[node name="pyramid" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="pyramidBack" parent="." instance=ExtResource( 2 )]
+
+[node name="Egyptian Woman" type="Sprite" parent="."]
+position = Vector2( 856.859, 390.508 )
+scale = Vector2( 0.769314, 1 )
+texture = ExtResource( 3 )
+
+[node name="title" type="Label" parent="."]
+margin_left = 52.5965
+margin_top = 79.8688
+margin_right = 742.596
+margin_bottom = 171.869
+rect_rotation = -5.0
+custom_fonts/font = SubResource( 2 )
+text = "THE ANCIENT HISTORIAN"
+
+[node name="text" type="Label" parent="."]
+margin_left = 54.0
+margin_top = 199.0
+margin_right = 745.0
+margin_bottom = 559.0
+custom_fonts/font = SubResource( 3 )
+text = "Welcome to the Great Pyramids in Giza, Egypt!
+Our country is known widely for the history of the ancient civilization of Egypt.
+
+Your mission is simple:
+1. There are 3 ancient hieroglyphic quizzes to be solved, starting from the bottom.
+2. Your team will be given a set of hieroglyphs each and they will need to come together to solve the questions before them!"
+autowrap = true
+
+[node name="readyBtn" parent="." instance=ExtResource( 6 )]
+margin_left = 346.614
+margin_top = 510.855
+margin_right = 561.614
+margin_bottom = 561.855
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

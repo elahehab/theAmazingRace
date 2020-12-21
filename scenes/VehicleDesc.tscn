@@ -1,0 +1,161 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scripts/VehicleDesc.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/whiteTrain.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/images/whitePlane.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/runWhite.png" type="Texture" id=6]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.5, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.121569, 0.121569, 0.121569, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0.960784, 0.737255, 0.235294, 1 )
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 120
+corner_radius_top_right = 120
+corner_radius_bottom_right = 120
+corner_radius_bottom_left = 120
+
+[sub_resource type="DynamicFont" id=5]
+size = 47
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 3 )
+
+[node name="VehicleDesc" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 417.047, 212.279 )
+scale = Vector2( 0.395049, 404.336 )
+texture = SubResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 2.1189
+margin_top = 2.81934
+margin_right = 833.119
+margin_bottom = 424.819
+custom_styles/panel = SubResource( 3 )
+
+[node name="circle" type="Panel" parent="."]
+margin_left = 60.5471
+margin_top = 97.2872
+margin_right = 295.547
+margin_bottom = 332.287
+custom_styles/panel = SubResource( 4 )
+
+[node name="train" type="Sprite" parent="."]
+visible = false
+position = Vector2( 180.223, 201.62 )
+scale = Vector2( 0.311221, 0.311221 )
+texture = ExtResource( 2 )
+
+[node name="trainLabelHeader" type="Label" parent="."]
+visible = false
+margin_left = 330.834
+margin_top = 64.4431
+margin_right = 721.834
+margin_bottom = 135.443
+custom_fonts/font = SubResource( 5 )
+text = "TRAVELLING BY TRAIN"
+
+[node name="trainLabelText" type="Label" parent="."]
+visible = false
+margin_left = 333.111
+margin_top = 155.841
+margin_right = 737.111
+margin_bottom = 320.841
+custom_fonts/font = SubResource( 6 )
+text = "In choosing this option,
+
+Your entire team has to sit in a straight line on the zoom call (facing the right). Using your hands as train wheels, your team has to \"Chugga Chugga\" together for 40 seconds, ending off with a \"Choo Choo!\" by the first person!"
+autowrap = true
+
+[node name="plane" type="Sprite" parent="."]
+visible = false
+position = Vector2( 181.406, 229.866 )
+rotation = -0.404916
+scale = Vector2( 0.415579, 0.415579 )
+texture = ExtResource( 5 )
+
+[node name="planeLabelHeader" type="Label" parent="."]
+visible = false
+margin_left = 330.834
+margin_top = 64.4431
+margin_right = 721.834
+margin_bottom = 135.443
+custom_fonts/font = SubResource( 5 )
+text = "TRAVELLING BY PLANE"
+
+[node name="planeLabelText" type="Label" parent="."]
+visible = false
+margin_left = 333.111
+margin_top = 155.841
+margin_right = 737.111
+margin_bottom = 320.841
+custom_fonts/font = SubResource( 6 )
+text = "In choosing the fastest option,
+
+Your entire team has to flap their arms as a team together for 20 seconds."
+autowrap = true
+
+[node name="run" type="Sprite" parent="."]
+position = Vector2( 172.697, 208.438 )
+scale = Vector2( 0.218623, 0.218623 )
+texture = ExtResource( 6 )
+
+[node name="runLabelHeader" type="Label" parent="."]
+margin_left = 330.834
+margin_top = 64.4431
+margin_right = 722.834
+margin_bottom = 135.443
+custom_fonts/font = SubResource( 5 )
+text = "TRAVELLING BY RUNNING"
+
+[node name="runLabelText" type="Label" parent="."]
+margin_left = 333.111
+margin_top = 155.841
+margin_right = 737.111
+margin_bottom = 320.841
+custom_fonts/font = SubResource( 6 )
+text = "In choosing the slowest option,
+
+Your team members one by one has to run/jog on the spot on camera for 15 seconds each!"
+autowrap = true
+
+[node name="Button" type="Button" parent="."]
+margin_left = 768.085
+margin_top = 21.6203
+margin_right = 816.085
+margin_bottom = 48.6203
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color_hover = Color( 0.584314, 0.584314, 0.584314, 1 )
+text = "close"
+flat = true
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
