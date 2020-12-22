@@ -24,7 +24,7 @@ corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
-[sub_resource type="StyleBoxFlat" id=5]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.278431, 0.27451, 0.27451, 1 )
 border_width_left = 2
 border_width_top = 2
@@ -52,7 +52,7 @@ corner_radius_bottom_left = 5
 size = 36
 font_data = ExtResource( 3 )
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.929412, 0.164706, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
@@ -130,7 +130,7 @@ margin_top = 38.948
 margin_right = 707.26
 margin_bottom = 108.948
 mouse_default_cursor_shape = 2
-custom_styles/hover = SubResource( 5 )
+custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -150,7 +150,7 @@ margin_left = 730.0
 margin_top = 315.0
 margin_right = 902.0
 margin_bottom = 335.0
-custom_styles/panel = SubResource( 2 )
+custom_styles/panel = SubResource( 5 )
 
 [node name="2" type="Sprite" parent="." groups=[
 "yogaFigure",
