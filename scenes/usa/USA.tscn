@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/USA.gd" type="Script" id=1]
+[ext_resource path="res://scenes/usa/USABack.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/images/usa/AmericanGirl.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 21
+font_data = ExtResource( 4 )
+
+[node name="USA" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="USABack" parent="." instance=ExtResource( 2 )]
+
+[node name="title" type="Label" parent="."]
+margin_left = 12.9543
+margin_top = 77.726
+margin_right = 755.954
+margin_bottom = 200.726
+rect_rotation = -5.0
+custom_fonts/font = SubResource( 1 )
+text = "WHO'S THAT PRESIDENT?"
+align = 1
+valign = 1
+
+[node name="text" type="Label" parent="."]
+margin_left = 54.0
+margin_top = 180.0
+margin_right = 749.0
+margin_bottom = 555.0
+custom_fonts/font = SubResource( 2 )
+text = "Welcome to the Mount Rushmore in Keystone, U.S.A!
+This monument is widely known to be a major historiacl landmark for Americans, as they remember what they believe are the greatest presidents of their country
+
+Your mission is simple:
+1. Your team will be given a timed quiz, where you will be shown tow things: A Country Flag and a Number.
+2. These two things represent the country of the president and the elected number of president.
+3. Your team has to guess correctly which president it is, before moving on to the next."
+autowrap = true
+
+[node name="readyBtn" parent="." instance=ExtResource( 5 )]
+
+[node name="AmericanGirl" type="Sprite" parent="."]
+position = Vector2( 852.083, 500.627 )
+scale = Vector2( 1.61262, 1.61262 )
+texture = ExtResource( 6 )
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

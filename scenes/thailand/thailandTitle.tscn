@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/thailandTitle.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/thailand/Grand-Palace-Feature-Image-1021x550.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 160
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "load"
+
+[node name="thailandTitle" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Grand-Palace-Feature-Image-1021x550" type="Sprite" parent="."]
+modulate = Color( 1, 0.74902, 0.74902, 1 )
+scale = Vector2( 1.09232, 1.09232 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+margin_left = 72.987
+margin_top = 95.2005
+margin_right = 978.987
+margin_bottom = 490.2
+custom_fonts/font = SubResource( 1 )
+text = "THE GRAND PALACE"
+align = 1
+autowrap = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "load"
+anims/load = SubResource( 2 )
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

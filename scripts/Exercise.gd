@@ -42,3 +42,12 @@ func onColorPressed(num):
 	get_node("exe"+str(num)).visible = true;
 	get_node("l" + str(num)).visible = true;
 	get_node("Num" + str(num)).visible = true;
+
+
+func _on_nextSceneBtn_pressed():
+	get_node("/root/global").countryTxt = 'THE WORLD\'S LARGEST ECONOMY'
+	get_node("/root/global").cityTxt = 'THE BLACK HILL REGION OF PENNINGTON COUNTY'
+	get_node("/root/global").monumentTxt = 'NAME OF FOUR **********'
+	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
+	get_node("/root/global").travelSceneNextScene = 'res://scenes/usa/USATitle.tscn'
+	get_tree().change_scene("res://scenes/RouteInfo.tscn")

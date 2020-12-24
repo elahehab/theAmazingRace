@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/firstSequence.gd" type="Script" id=1]
+[ext_resource path="res://scenes/greece/greeceBack.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=3]
+
+[node name="firstSequence" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="greeceBack" parent="." instance=ExtResource( 2 )]
+
+[node name="firstSeqBtn" parent="." instance=ExtResource( 3 )]
+margin_left = 330.676
+margin_top = 401.241
+margin_right = 696.676
+margin_bottom = 473.241
+text = "THE FIRST SEQUENCE"
+
+[node name="endBtn" parent="." instance=ExtResource( 3 )]
+margin_left = 410.664
+margin_top = 495.294
+margin_right = 625.664
+margin_bottom = 546.294
+text = "CLOSE"
+
+[node name="C1" type="ColorRect" parent="."]
+margin_left = 53.6678
+margin_top = 168.299
+margin_right = 200.668
+margin_bottom = 315.299
+color = Color( 0, 0.431373, 1, 1 )
+
+[node name="C2" type="ColorRect" parent="."]
+margin_left = 244.281
+margin_top = 168.299
+margin_right = 391.281
+margin_bottom = 315.299
+color = Color( 0.956863, 0.929412, 0, 1 )
+
+[node name="C3" type="ColorRect" parent="."]
+margin_left = 440.447
+margin_top = 168.299
+margin_right = 587.447
+margin_bottom = 315.299
+color = Color( 0.278431, 0, 0.670588, 1 )
+
+[node name="C4" type="ColorRect" parent="."]
+margin_left = 634.762
+margin_top = 168.299
+margin_right = 781.762
+margin_bottom = 315.299
+color = Color( 0, 0.815686, 1, 1 )
+
+[node name="C5" type="ColorRect" parent="."]
+margin_left = 821.674
+margin_top = 168.299
+margin_right = 968.674
+margin_bottom = 315.299
+
+[node name="nextSceneBtn" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 942.0
+margin_top = 537.0
+margin_right = 1024.0
+margin_bottom = 599.0
+flat = true
+[connection signal="pressed" from="firstSeqBtn" to="." method="_on_firstSeqBtn_pressed"]
+[connection signal="pressed" from="endBtn" to="." method="_on_endBtn_pressed"]
+[connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]
