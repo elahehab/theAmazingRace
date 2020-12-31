@@ -22,11 +22,13 @@ script = ExtResource( 1 )
 [node name="franceBack" parent="." instance=ExtResource( 2 )]
 
 [node name="woman" type="Sprite" parent="."]
-position = Vector2( 880.283, 426 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 880.283, 650 )
 scale = Vector2( 0.939941, 0.939941 )
 texture = ExtResource( 3 )
 
 [node name="title" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 56.2589
 margin_top = 80.872
 margin_right = 479.259
@@ -36,9 +38,10 @@ custom_fonts/font = SubResource( 1 )
 text = "LIGHT UP MY LIFE"
 
 [node name="text" type="Label" parent="."]
-margin_left = 69.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -300.0
 margin_top = 140.0
-margin_right = 797.0
+margin_right = 428.0
 margin_bottom = 497.0
 custom_fonts/font = SubResource( 2 )
 text = "

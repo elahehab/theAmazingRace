@@ -3,13 +3,11 @@
 [ext_resource path="res://scripts/franceTitle.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/france/Winer-Parisienne.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scenes/LabelAnim.tres" type="Animation" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 160
 font_data = ExtResource( 3 )
-
-[sub_resource type="Animation" id=2]
-resource_name = "LOAD"
 
 [node name="franceTitle" type="Node2D"]
 script = ExtResource( 1 )
@@ -17,9 +15,45 @@ script = ExtResource( 1 )
 [node name="Winer-Parisienne" type="Sprite" parent="."]
 modulate = Color( 0.721569, 0.721569, 0.721569, 1 )
 position = Vector2( -1.75806, -24.6133 )
-scale = Vector2( 0.392993, 0.392993 )
+scale = Vector2( 0.394448, 0.392993 )
 texture = ExtResource( 2 )
 centered = false
+
+[node name="back1" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -1.75806, -170.613 )
+scale = Vector2( 0.394448, 0.392993 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -0.274918, 108.934, 2604.42, 199.725 )
+
+[node name="back2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -1.75806, -70.6133 )
+scale = Vector2( 0.394448, 0.392993 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -0.274918, 376.565, 2604.42, 159.78 )
+
+[node name="back3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -1.75806, 609.387 )
+scale = Vector2( 0.394448, 0.392993 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -0.274918, 1137.44, 2604.42, 147.797 )
+
+[node name="back4" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -1.75806, 694.387 )
+scale = Vector2( 0.394448, 0.392993 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -0.274918, 1357.14, 2604.42, 167.769 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 96.6948
@@ -30,6 +64,6 @@ custom_fonts/font = SubResource( 1 )
 text = "EIFFEL TOWER"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "LOAD"
-anims/LOAD = SubResource( 2 )
+autoplay = "LabelAnim"
+anims/LabelAnim = ExtResource( 4 )
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

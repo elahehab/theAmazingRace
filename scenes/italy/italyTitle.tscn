@@ -9,7 +9,115 @@ size = 160
 font_data = ExtResource( 3 )
 
 [sub_resource type="Animation" id=2]
-resource_name = "LOAD"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1.2, 1.8, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.729412 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("back1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 493.751, 78.328 ), Vector2( 493.751, -185.672 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("back1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("back2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 493.751, 207.328 ), Vector2( 493.751, -56.672 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("back2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("back3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 493.751, 434.328 ), Vector2( 493.751, 648.328 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("back3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("back4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 493.751, 539.328 ), Vector2( 493.751, 753.328 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("back4:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.5, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0.588235 ) ]
+}
 
 [node name="italyTitle" type="Node2D"]
 script = ExtResource( 1 )
@@ -19,7 +127,36 @@ modulate = Color( 0.690196, 0.690196, 0.690196, 1 )
 position = Vector2( 493.751, 287.328 )
 texture = ExtResource( 2 )
 
+[node name="back1" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.588235 )
+position = Vector2( 493.751, 78.328 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 7.21307, 46.4683, 1191.48, 103.607 )
+
+[node name="back2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.588235 )
+position = Vector2( 493.751, 207.328 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 7.21307, 185.824, 1191.48, 99.2896 )
+
+[node name="back3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.588235 )
+position = Vector2( 493.751, 434.328 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 7.21307, 418.675, 1191.48, 77.7049 )
+
+[node name="back4" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.588235 )
+position = Vector2( 493.751, 539.328 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 7.21307, 513.648, 1191.48, 92.8142 )
+
 [node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 120.006
 margin_top = 157.018
 margin_right = 879.006
@@ -28,6 +165,6 @@ custom_fonts/font = SubResource( 1 )
 text = "COLOSSEUM"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "LOAD"
-anims/LOAD = SubResource( 2 )
+autoplay = "LabelAnim (copy)"
+"anims/LabelAnim (copy)" = SubResource( 2 )
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

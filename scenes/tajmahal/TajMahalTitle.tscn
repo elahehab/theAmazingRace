@@ -3,50 +3,66 @@
 [ext_resource path="res://scripts/TajMahalTitle.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/India Taj Mahal.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scenes/titlePageAnim.tres" type="Animation" id=4]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 200
 font_data = ExtResource( 3 )
-
-[sub_resource type="Animation" id=4]
-length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("Label:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5, 1.2, 1.8, 2.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.729412 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
-}
 
 [node name="TajMahalTitle" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="India Taj Mahal" type="Sprite" parent="."]
+[node name="back" type="Sprite" parent="."]
 modulate = Color( 0.815686, 0.815686, 0.815686, 1 )
 scale = Vector2( 1.06097, 1 )
 texture = ExtResource( 2 )
 centered = false
 
-[node name="India Taj Mahal2" type="Sprite" parent="."]
-modulate = Color( 0.815686, 0.815686, 0.815686, 1 )
-scale = Vector2( 1.06097, 1 )
+[node name="back1" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, -261 )
+scale = Vector2( 1.061, 1 )
 texture = ExtResource( 2 )
 centered = false
+region_enabled = true
+region_rect = Rect2( 0.48584, -1.15529, 967.96, 128.643 )
+
+[node name="back2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 1.42468, -106.61 )
+scale = Vector2( 1.061, 1 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 3.27539, 171.794, 967.96, 100.748 )
+
+[node name="back3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 4.84949, 762.895 )
+scale = Vector2( 1.061, 1 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0.844727, 439.913, 967.96, 128.317 )
+
+[node name="back4" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 1.42468, 613.478 )
+scale = Vector2( 1.061, 1 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -4.7343, 582.178, 973.539, 100.422 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 101.01
 margin_top = 203.526
 margin_right = 930.01
 margin_bottom = 448.526
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "TAJ MAHAL"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
-anims/load = SubResource( 4 )
+anims/load = ExtResource( 4 )
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

@@ -20,7 +20,7 @@ corner_radius_bottom_left = 30
 [node name="Winer-Parisienne" type="Sprite" parent="."]
 modulate = Color( 0.760784, 0.760784, 0.760784, 1 )
 position = Vector2( -1.758, -24.613 )
-scale = Vector2( 0.393, 0.393 )
+scale = Vector2( 0.394608, 0.393 )
 texture = ExtResource( 1 )
 centered = false
 
