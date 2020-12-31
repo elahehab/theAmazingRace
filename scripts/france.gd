@@ -2,7 +2,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	get_node("franceBack").get_node("AnimationPlayer").play("load")
 
 
 func _on_readyBtn_pressed():

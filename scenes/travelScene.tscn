@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/travelScene.gd" type="Script" id=1]
 [ext_resource path="res://scenes/travel.tscn" type="PackedScene" id=2]
@@ -9,6 +9,22 @@
 size = 43
 extra_spacing_char = 2
 font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "load"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 0.8, 1.1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0.572549 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
 
 [node name="travelScene" type="Node2D"]
 script = ExtResource( 1 )
@@ -30,10 +46,12 @@ text = "TRAVEL"
 position = Vector2( 67.9734, 65.4559 )
 
 [node name="train" parent="." instance=ExtResource( 4 )]
+visible = false
 position = Vector2( 375.112, 65.4559 )
 vehicleMode = 2
 
 [node name="walk" parent="." instance=ExtResource( 4 )]
+visible = false
 position = Vector2( 694.839, 65.4559 )
 vehicleMode = 3
 
@@ -43,4 +61,7 @@ margin_top = 551.34
 margin_right = 1024.07
 margin_bottom = 599.34
 flat = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/load = SubResource( 2 )
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]

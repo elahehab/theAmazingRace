@@ -1,90 +1,190 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scripts/Exercise.gd" type="Script" id=1]
 [ext_resource path="res://scenes/cambodia/cambodiaBack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=4]
 
-[sub_resource type="DynamicFont" id=16]
+[sub_resource type="DynamicFont" id=1]
 size = 60
 font_data = ExtResource( 3 )
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=2]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=9]
+[sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.25098, 0.713726, 0.12549, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=6]
+[sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 1, 1, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=10]
+[sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0, 0.815686, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=5]
+[sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 1, 0.584314, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=12]
+[sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.278431, 0, 0.670588, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0, 0.431373, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=11]
+[sub_resource type="StyleBoxFlat" id=9]
 bg_color = Color( 0.929412, 0.164706, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=8]
+[sub_resource type="StyleBoxFlat" id=10]
 bg_color = Color( 0.956863, 0.929412, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=13]
+[sub_resource type="StyleBoxFlat" id=11]
 bg_color = Color( 0, 0, 0, 1 )
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
 
-[sub_resource type="DynamicFont" id=14]
+[sub_resource type="DynamicFont" id=12]
 size = 50
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=15]
+[sub_resource type="DynamicFont" id=13]
 size = 20
 font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=14]
+resource_name = "load"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("color_1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("color_2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("color_3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("color_4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("color_5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("color_6:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("color_7:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("color_8:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="Exercise" type="Node2D"]
 script = ExtResource( 1 )
@@ -96,72 +196,80 @@ margin_left = 222.074
 margin_top = 38.863
 margin_right = 776.074
 margin_bottom = 112.863
-custom_fonts/font = SubResource( 16 )
+custom_fonts/font = SubResource( 1 )
 text = "CHOOSE YOUR COLOURS"
 
 [node name="color_1" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 118.0
 margin_top = 313.149
 margin_right = 290.0
 margin_bottom = 333.149
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 9 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
 
 [node name="color_2" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 327.0
 margin_top = 313.149
 margin_right = 499.0
 margin_bottom = 333.149
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 6 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 4 )
 
 [node name="color_3" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 528.0
 margin_top = 313.149
 margin_right = 700.0
 margin_bottom = 333.149
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 5 )
 
 [node name="color_4" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 730.0
 margin_top = 315.0
 margin_right = 902.0
 margin_bottom = 335.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 5 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 6 )
 
 [node name="color_5" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 118.0
 margin_top = 522.0
 margin_right = 290.0
 margin_bottom = 542.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 12 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 7 )
 
 [node name="color_6" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 327.0
 margin_top = 522.0
 margin_right = 499.0
 margin_bottom = 542.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 7 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 8 )
 
 [node name="color_7" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 528.0
 margin_top = 522.0
 margin_right = 700.0
 margin_bottom = 542.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 11 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 9 )
 
 [node name="color_8" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 730.0
 margin_top = 522.0
 margin_right = 902.0
 margin_bottom = 542.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 10 )
 
 [node name="nextSceneBtn" type="Button" parent="."]
 margin_left = 940.99
@@ -176,7 +284,7 @@ margin_left = 133.0
 margin_top = 146.0
 margin_right = 264.0
 margin_bottom = 297.0
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num1" type="Label" parent="."]
 visible = false
@@ -186,7 +294,7 @@ margin_left = 154.0
 margin_top = 163.0
 margin_right = 244.0
 margin_bottom = 223.0
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "20"
 align = 1
 valign = 1
@@ -199,7 +307,7 @@ margin_left = 154.0
 margin_top = 218.0
 margin_right = 244.0
 margin_bottom = 278.0
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Jumping
 Jacks"
 align = 1
@@ -211,7 +319,7 @@ margin_left = 345.0
 margin_top = 146.0
 margin_right = 476.0
 margin_bottom = 297.0
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num2" type="Label" parent="."]
 visible = false
@@ -221,7 +329,7 @@ margin_left = 366.0
 margin_top = 163.0
 margin_right = 456.0
 margin_bottom = 225.0
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "20"
 align = 1
 valign = 1
@@ -234,7 +342,7 @@ margin_left = 366.0
 margin_top = 218.0
 margin_right = 456.0
 margin_bottom = 278.0
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Squats"
 align = 1
 valign = 1
@@ -245,7 +353,7 @@ margin_left = 547.0
 margin_top = 146.0
 margin_right = 678.0
 margin_bottom = 297.0
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num3" type="Label" parent="."]
 visible = false
@@ -255,7 +363,7 @@ margin_left = 568.0
 margin_top = 163.0
 margin_right = 658.0
 margin_bottom = 225.0
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "15"
 align = 1
 valign = 1
@@ -268,7 +376,7 @@ margin_left = 568.0
 margin_top = 218.0
 margin_right = 658.0
 margin_bottom = 278.0
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Push Ups"
 align = 1
 valign = 1
@@ -279,7 +387,7 @@ margin_left = 739.0
 margin_top = 146.0
 margin_right = 870.0
 margin_bottom = 297.0
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num4" type="Label" parent="."]
 visible = false
@@ -289,7 +397,7 @@ margin_left = 761.851
 margin_top = 163.0
 margin_right = 851.851
 margin_bottom = 225.0
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "20
 "
 align = 1
@@ -303,7 +411,7 @@ margin_left = 760.0
 margin_top = 218.0
 margin_right = 850.0
 margin_bottom = 278.0
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Lunges"
 align = 1
 valign = 1
@@ -314,7 +422,7 @@ margin_left = 131.997
 margin_top = 351.419
 margin_right = 262.997
 margin_bottom = 502.419
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num5" type="Label" parent="."]
 visible = false
@@ -324,7 +432,7 @@ margin_left = 154.848
 margin_top = 368.419
 margin_right = 244.848
 margin_bottom = 495.419
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "15
 "
 align = 1
@@ -338,7 +446,7 @@ margin_left = 152.997
 margin_top = 423.419
 margin_right = 242.997
 margin_bottom = 483.419
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Tricep
 Dips"
 align = 1
@@ -350,7 +458,7 @@ margin_left = 346.997
 margin_top = 351.419
 margin_right = 477.997
 margin_bottom = 502.419
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num6" type="Label" parent="."]
 visible = false
@@ -360,7 +468,7 @@ margin_left = 369.848
 margin_top = 368.419
 margin_right = 459.848
 margin_bottom = 495.419
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "90
 "
 align = 1
@@ -374,7 +482,7 @@ margin_left = 360.147
 margin_top = 423.419
 margin_right = 465.147
 margin_bottom = 483.419
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Seconds
 Wall Squats"
 align = 1
@@ -386,7 +494,7 @@ margin_left = 546.997
 margin_top = 351.419
 margin_right = 677.997
 margin_bottom = 502.419
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num7" type="Label" parent="."]
 visible = false
@@ -396,7 +504,7 @@ margin_left = 569.848
 margin_top = 368.419
 margin_right = 659.848
 margin_bottom = 495.419
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "90
 "
 align = 1
@@ -410,7 +518,7 @@ margin_left = 560.147
 margin_top = 423.419
 margin_right = 665.147
 margin_bottom = 483.419
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Seconds
 Plank"
 align = 1
@@ -422,7 +530,7 @@ margin_left = 740.997
 margin_top = 351.419
 margin_right = 871.997
 margin_bottom = 502.419
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 
 [node name="Num8" type="Label" parent="."]
 visible = false
@@ -432,7 +540,7 @@ margin_left = 763.848
 margin_top = 368.419
 margin_right = 853.848
 margin_bottom = 495.419
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 12 )
 text = "10
 "
 align = 1
@@ -446,10 +554,14 @@ margin_left = 754.147
 margin_top = 423.419
 margin_right = 859.147
 margin_bottom = 483.419
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 13 )
 text = "Burpees"
 align = 1
 valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "load"
+anims/load = SubResource( 14 )
 [connection signal="pressed" from="color_1" to="." method="_on_color_1_pressed"]
 [connection signal="pressed" from="color_2" to="." method="_on_color_2_pressed"]
 [connection signal="pressed" from="color_3" to="." method="_on_color_3_pressed"]

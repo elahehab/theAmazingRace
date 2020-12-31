@@ -4,7 +4,7 @@ var CIPHER = preload("res://scenes/egypt/cipher.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	get_node("pyramidBack").get_node("AnimationPlayer").play("load")
 
 func _on_tier3_mouse_entered():
 	get_node("tier3").modulate = Color(0, 0, 0)
