@@ -102,7 +102,7 @@ position = Vector2( 878.334, 700 )
 texture = ExtResource( 3 )
 
 [node name="title" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color( 1, 1, 1, 0.54902 )
 margin_left = 57.3692
 margin_top = 79.5766
 margin_right = 471.369
