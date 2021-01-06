@@ -5,12 +5,12 @@
 [ext_resource path="res://assets/images/instructionHeader2.png" type="Texture" id=3]
 [ext_resource path="res://scenes/ColorSquare.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/fonts/tahoma20.tres" type="DynamicFont" id=5]
-[ext_resource path="res://assets/images/LetsGoBtn.png" type="Texture" id=6]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "buttonFade"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Button/Sprite:modulate")
+tracks/0/path = NodePath("readyBtn:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -139,145 +139,145 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("ColorSquare:position")
+tracks/10/path = NodePath("Label8:modulate")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 237.181, 181.166 ), Vector2( 68.1807, 181.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("ColorSquare2:position")
+tracks/11/path = NodePath("Label7:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 496.257, 181.166 ), Vector2( 327.257, 181.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("ColorSquare3:position")
+tracks/12/path = NodePath("Label6:modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 738.958, 181.166 ), Vector2( 569.958, 181.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("ColorSquare4:position")
+tracks/13/path = NodePath("Label5:modulate")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 986.181, 181.166 ), Vector2( 817.181, 181.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("ColorSquare5:position")
+tracks/14/path = NodePath("Label4:modulate")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 237.181, 362.166 ), Vector2( 68.1807, 362.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath("ColorSquare6:position")
+tracks/15/path = NodePath("Label3:modulate")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 496.257, 362.166 ), Vector2( 327.257, 362.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("ColorSquare7:position")
+tracks/16/path = NodePath("Label2:modulate")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 738.958, 362.166 ), Vector2( 569.958, 362.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath("ColorSquare8:position")
+tracks/17/path = NodePath("ColorSquare10:modulate")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 986.181, 362.166 ), Vector2( 817.181, 362.166 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/18/type = "value"
-tracks/18/path = NodePath("Label8:rect_position")
+tracks/18/path = NodePath("Label10:modulate")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/imported = false
 tracks/18/enabled = true
 tracks/18/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 697.63, 494.341 ), Vector2( 835.63, 494.341 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/19/type = "value"
-tracks/19/path = NodePath("Label8:modulate")
+tracks/19/path = NodePath("ColorSquare9:modulate")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/imported = false
 tracks/19/enabled = true
 tracks/19/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/20/type = "value"
-tracks/20/path = NodePath("Label7:modulate")
+tracks/20/path = NodePath("Label9:modulate")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/imported = false
 tracks/20/enabled = true
 tracks/20/keys = {
-"times": PoolRealArray( 6, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 6, 8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/21/type = "value"
-tracks/21/path = NodePath("Label7:rect_position")
+tracks/21/path = NodePath("ColorSquare:position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/imported = false
@@ -286,10 +286,10 @@ tracks/21/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 455.886, 494.341 ), Vector2( 593.886, 494.341 ) ]
+"values": [ Vector2( 274.181, 181.166 ), Vector2( 68.1807, 181.166 ) ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("Label6:modulate")
+tracks/22/path = NodePath("ColorSquare2:position")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
@@ -298,10 +298,10 @@ tracks/22/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( 459.257, 181.166 ), Vector2( 253.257, 181.166 ) ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("Label6:rect_position")
+tracks/23/path = NodePath("ColorSquare3:position")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -310,10 +310,10 @@ tracks/23/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 210.435, 494.341 ), Vector2( 348.435, 494.341 ) ]
+"values": [ Vector2( 651.958, 181.166 ), Vector2( 445.958, 181.166 ) ]
 }
 tracks/24/type = "value"
-tracks/24/path = NodePath("Label5:modulate")
+tracks/24/path = NodePath("Label:rect_position")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/imported = false
@@ -322,10 +322,10 @@ tracks/24/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( -87.4951, 313.903 ), Vector2( 83.5049, 313.903 ) ]
 }
 tracks/25/type = "value"
-tracks/25/path = NodePath("Label5:rect_position")
+tracks/25/path = NodePath("Label2:rect_position")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/imported = false
@@ -334,10 +334,10 @@ tracks/25/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -54.495, 494.341 ), Vector2( 83.505, 494.341 ) ]
+"values": [ Vector2( 103.435, 313.903 ), Vector2( 274.435, 313.903 ) ]
 }
 tracks/26/type = "value"
-tracks/26/path = NodePath("Label4:modulate")
+tracks/26/path = NodePath("Label3:rect_position")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/imported = false
@@ -346,10 +346,10 @@ tracks/26/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( 298.886, 313.903 ), Vector2( 469.886, 313.903 ) ]
 }
 tracks/27/type = "value"
-tracks/27/path = NodePath("Label4:rect_position")
+tracks/27/path = NodePath("ColorSquare4:position")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/imported = false
@@ -358,10 +358,10 @@ tracks/27/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 697.63, 313.903 ), Vector2( 835.63, 313.903 ) ]
+"values": [ Vector2( 833.181, 181.166 ), Vector2( 627.181, 181.166 ) ]
 }
 tracks/28/type = "value"
-tracks/28/path = NodePath("Label3:modulate")
+tracks/28/path = NodePath("Label4:rect_position")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/imported = false
@@ -370,10 +370,10 @@ tracks/28/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( 474.63, 313.903 ), Vector2( 645.63, 313.903 ) ]
 }
 tracks/29/type = "value"
-tracks/29/path = NodePath("Label3:rect_position")
+tracks/29/path = NodePath("ColorSquare10:position")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/imported = false
@@ -382,10 +382,10 @@ tracks/29/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 455.886, 313.903 ), Vector2( 593.886, 313.903 ) ]
+"values": [ Vector2( 1018, 181.166 ), Vector2( 812, 181.166 ) ]
 }
 tracks/30/type = "value"
-tracks/30/path = NodePath("Label2:modulate")
+tracks/30/path = NodePath("Label10:rect_position")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/imported = false
@@ -394,10 +394,10 @@ tracks/30/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( 659, 313.903 ), Vector2( 830, 313.903 ) ]
 }
 tracks/31/type = "value"
-tracks/31/path = NodePath("Label2:rect_position")
+tracks/31/path = NodePath("ColorSquare5:position")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/imported = false
@@ -406,10 +406,10 @@ tracks/31/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 210.435, 313.903 ), Vector2( 348.435, 313.903 ) ]
+"values": [ Vector2( 274.181, 362.166 ), Vector2( 68.1807, 362.166 ) ]
 }
 tracks/32/type = "value"
-tracks/32/path = NodePath("Label:rect_position")
+tracks/32/path = NodePath("Label5:rect_position")
 tracks/32/interp = 1
 tracks/32/loop_wrap = true
 tracks/32/imported = false
@@ -418,7 +418,103 @@ tracks/32/keys = {
 "times": PoolRealArray( 6, 8 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -54.4951, 313.903 ), Vector2( 83.5049, 313.903 ) ]
+"values": [ Vector2( -87.495, 494.341 ), Vector2( 83.505, 494.341 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("ColorSquare6:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 459.257, 362.166 ), Vector2( 253.257, 362.166 ) ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("Label6:rect_position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 103.435, 494.341 ), Vector2( 274.435, 494.341 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("ColorSquare7:position")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 651.958, 362.166 ), Vector2( 445.958, 362.166 ) ]
+}
+tracks/36/type = "value"
+tracks/36/path = NodePath("Label7:rect_position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 298.886, 494.341 ), Vector2( 469.886, 494.341 ) ]
+}
+tracks/37/type = "value"
+tracks/37/path = NodePath("ColorSquare8:position")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 833.181, 362.166 ), Vector2( 627.181, 362.166 ) ]
+}
+tracks/38/type = "value"
+tracks/38/path = NodePath("Label8:rect_position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 474.63, 494.341 ), Vector2( 645.63, 494.341 ) ]
+}
+tracks/39/type = "value"
+tracks/39/path = NodePath("ColorSquare9:position")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1018, 362.166 ), Vector2( 812, 362.166 ) ]
+}
+tracks/40/type = "value"
+tracks/40/path = NodePath("Label9:rect_position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
+"times": PoolRealArray( 6, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 659, 494.341 ), Vector2( 830, 494.341 ) ]
 }
 
 [node name="WorldMap" type="Node2D"]
@@ -431,153 +527,161 @@ scale = Vector2( 0.839549, 0.906469 )
 texture = ExtResource( 2 )
 
 [node name="instruction" type="Sprite" parent="."]
-position = Vector2( 516.158, -103.802 )
+position = Vector2( 516.158, 85.1985 )
 scale = Vector2( 0.839317, 0.839317 )
 texture = ExtResource( 3 )
 
 [node name="ColorSquare" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 237.181, 181.166 )
+position = Vector2( 68.1807, 181.166 )
 r = 237.0
 g = 42.0
 b = 0.0
 
 [node name="Label" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -54.4951
+margin_left = 83.5049
 margin_top = 313.903
-margin_right = 35.505
+margin_right = 173.505
 margin_bottom = 339.903
 custom_fonts/font = ExtResource( 5 )
 text = "#ED2A00"
 
 [node name="ColorSquare2" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 496.257, 181.166 )
+position = Vector2( 253.257, 181.166 )
 r = 0.0
 g = 110.0
 b = 255.0
 
 [node name="Label2" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 210.435
+margin_left = 274.435
 margin_top = 313.903
-margin_right = 289.435
+margin_right = 353.435
 margin_bottom = 339.903
 custom_fonts/font = ExtResource( 5 )
 text = "#006EFF"
 
 [node name="ColorSquare3" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 738.958, 181.166 )
+position = Vector2( 445.958, 181.166 )
 r = 255.0
 g = 149.0
 b = 0.0
 
 [node name="Label3" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 455.886
+margin_left = 469.886
 margin_top = 313.903
-margin_right = 534.886
+margin_right = 548.886
 margin_bottom = 339.903
 custom_fonts/font = ExtResource( 5 )
 text = "#FF9500"
 
 [node name="ColorSquare4" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 986.181, 181.166 )
+position = Vector2( 627.181, 181.166 )
 r = 244.0
 g = 237.0
 b = 0.0
 
 [node name="Label4" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 697.63
+margin_left = 645.63
 margin_top = 313.903
-margin_right = 780.63
+margin_right = 728.63
 margin_bottom = 339.903
 custom_fonts/font = ExtResource( 5 )
 text = "#F4ED00"
 
+[node name="ColorSquare10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812, 181.166 )
+r = 255.0
+g = 22.0
+b = 148.0
+
+[node name="Label10" type="Label" parent="."]
+margin_left = 830.0
+margin_top = 313.903
+margin_right = 913.0
+margin_bottom = 339.903
+custom_fonts/font = ExtResource( 5 )
+text = "#FF1694"
+
 [node name="ColorSquare5" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 237.181, 362.166 )
+position = Vector2( 68.1807, 362.166 )
 r = 71.0
 g = 0.0
 b = 171.0
 
 [node name="Label5" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -54.495
+margin_left = 83.505
 margin_top = 494.341
-margin_right = 28.5051
+margin_right = 166.505
 margin_bottom = 520.341
 custom_fonts/font = ExtResource( 5 )
 text = "#4700AB"
 
 [node name="ColorSquare6" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 496.257, 362.166 )
+position = Vector2( 253.257, 362.166 )
 r = 64.0
 g = 182.0
 b = 32.0
 
 [node name="Label6" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 210.435
+margin_left = 274.435
 margin_top = 494.341
-margin_right = 293.435
+margin_right = 357.435
 margin_bottom = 520.341
 custom_fonts/font = ExtResource( 5 )
 text = "#40B620"
 
 [node name="ColorSquare7" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 738.958, 362.166 )
+position = Vector2( 445.958, 362.166 )
 r = 0.0
 g = 208.0
 b = 255.0
 
 [node name="Label7" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 455.886
+margin_left = 469.886
 margin_top = 494.341
-margin_right = 538.886
+margin_right = 552.886
 margin_bottom = 520.341
 custom_fonts/font = ExtResource( 5 )
 text = "#00D0FF"
 
 [node name="ColorSquare8" parent="." instance=ExtResource( 4 )]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 986.181, 362.166 )
+position = Vector2( 627.181, 362.166 )
 r = 255.0
 g = 255.0
 b = 255.0
 
 [node name="Label8" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 697.63
+margin_left = 645.63
 margin_top = 494.341
-margin_right = 780.63
+margin_right = 728.63
 margin_bottom = 520.341
 custom_fonts/font = ExtResource( 5 )
 text = "#FFFFFF"
+
+[node name="ColorSquare9" parent="." instance=ExtResource( 4 )]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 812, 362.166 )
+r = 0.0
+g = 0.0
+b = 0.0
+
+[node name="Label9" type="Label" parent="."]
+margin_left = 830.0
+margin_top = 494.341
+margin_right = 913.0
+margin_bottom = 520.341
+custom_fonts/font = ExtResource( 5 )
+text = "#000000"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "colourPallete"
 anims/buttonFade = SubResource( 1 )
 anims/colourPallete = SubResource( 2 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 403.0
-margin_top = 526.0
-margin_right = 614.0
-margin_bottom = 583.0
-flat = true
-
-[node name="Sprite" type="Sprite" parent="Button"]
+[node name="readyBtn" parent="." instance=ExtResource( 6 )]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 104.893, 29.8874 )
-scale = Vector2( 0.592864, 0.592864 )
-texture = ExtResource( 6 )
-[connection signal="pressed" from="Button" to="." method="_on_LetsGoButton_pressed"]
+margin_left = 402.003
+margin_top = 532.543
+margin_right = 617.003
+margin_bottom = 583.543
+text = "LETS GO!"
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

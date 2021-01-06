@@ -1,21 +1,26 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/flags.gd" type="Script" id=1]
 [ext_resource path="res://scenes/usa/USABack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 34
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 30
 font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 43
+font_data = ExtResource( 3 )
 
 [node name="flags" type="Node2D"]
 script = ExtResource( 1 )
@@ -51,7 +56,7 @@ margin_left = 488.748
 margin_top = 515.12
 margin_right = 528.748
 margin_bottom = 558.12
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 align = 1
 valign = 1
 
@@ -60,7 +65,27 @@ margin_left = 183.0
 margin_top = 420.0
 margin_right = 511.0
 margin_bottom = 478.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 align = 1
 valign = 1
+
+[node name="president" type="Sprite" parent="."]
+position = Vector2( 499.297, 215.439 )
+
+[node name="presidentName" type="Label" parent="."]
+margin_left = 298.547
+margin_top = 369.0
+margin_right = 714.547
+margin_bottom = 445.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+
+[node name="revealBtn" parent="." instance=ExtResource( 5 )]
+margin_left = 397.98
+margin_top = 445.888
+margin_right = 612.98
+margin_bottom = 496.888
+text = "Reveal"
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="revealBtn" to="." method="_on_revealBtn_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://scripts/yoga.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/India Taj Mahal.jpg" type="Texture" id=2]
@@ -7,10 +7,12 @@
 [ext_resource path="res://assets/images/yoga/2.png" type="Texture" id=5]
 [ext_resource path="res://assets/images/yoga/3.png" type="Texture" id=6]
 [ext_resource path="res://assets/images/yoga/4.png" type="Texture" id=7]
-[ext_resource path="res://assets/images/yoga/5.png" type="Texture" id=8]
-[ext_resource path="res://assets/images/yoga/6.png" type="Texture" id=9]
-[ext_resource path="res://assets/images/yoga/7.png" type="Texture" id=10]
-[ext_resource path="res://assets/images/yoga/8.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/yoga/55.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/yoga/5.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/yoga/6.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/yoga/7.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/yoga/8.png" type="Texture" id=12]
+[ext_resource path="res://assets/images/yoga/10.png" type="Texture" id=13]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.819608 )
@@ -52,57 +54,71 @@ corner_radius_bottom_left = 5
 size = 36
 font_data = ExtResource( 3 )
 
-[sub_resource type="StyleBoxFlat" id=5]
-bg_color = Color( 0.929412, 0.164706, 0, 1 )
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0, 0.431373, 1, 1 )
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 1, 0.584314, 0, 1 )
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0.956863, 0.929412, 0, 1 )
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id=9]
+[sub_resource type="StyleBoxFlat" id=18]
 bg_color = Color( 0.278431, 0, 0.670588, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=10]
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0, 0.431373, 1, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=19]
 bg_color = Color( 0.25098, 0.713726, 0.12549, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=11]
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.929412, 0.164706, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 1, 0.0862745, 0.580392, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 1, 0.584314, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=20]
 bg_color = Color( 0, 0.815686, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=12]
-bg_color = Color( 1, 1, 1, 1 )
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.956863, 0.929412, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0, 0, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -111,7 +127,7 @@ corner_radius_bottom_left = 10
 [sub_resource type="Animation" id=13]
 resource_name = "load"
 tracks/0/type = "value"
-tracks/0/path = NodePath("color1:modulate")
+tracks/0/path = NodePath("color8:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -135,7 +151,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("color3:modulate")
+tracks/2/path = NodePath("color6:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -147,7 +163,7 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("color4:modulate")
+tracks/3/path = NodePath("color1:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -159,7 +175,7 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("color5:modulate")
+tracks/4/path = NodePath("color3:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -171,7 +187,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("color6:modulate")
+tracks/5/path = NodePath("color7:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -183,7 +199,7 @@ tracks/5/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("color7:modulate")
+tracks/6/path = NodePath("color5:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -195,12 +211,36 @@ tracks/6/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("color8:modulate")
+tracks/7/path = NodePath("color4:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("color10:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("color45:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
@@ -238,138 +278,162 @@ text = "CHOOSE YOUR COLOURS"
 [node name="1" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 134, 130.819 )
+position = Vector2( 67, 130.819 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 centered = false
 
-[node name="color1" type="Panel" parent="."]
+[node name="color1" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 730.0
+margin_left = 51.0
 margin_top = 315.0
-margin_right = 902.0
+margin_right = 223.0
 margin_bottom = 335.0
-custom_styles/panel = SubResource( 5 )
+custom_styles/normal = SubResource( 18 )
 
 [node name="2" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 336, 130.819 )
+position = Vector2( 248, 130.819 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 5 )
 centered = false
 
-[node name="color2" type="Panel" parent="."]
+[node name="color2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 327.0
+margin_left = 239.0
 margin_top = 315.0
-margin_right = 499.0
+margin_right = 411.0
 margin_bottom = 335.0
-custom_styles/panel = SubResource( 6 )
+custom_styles/normal = SubResource( 15 )
 
 [node name="3" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 538, 130.819 )
+position = Vector2( 435, 130.819 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )
 centered = false
 
-[node name="color3" type="Panel" parent="."]
+[node name="color3" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 327.0
-margin_top = 537.0
-margin_right = 499.0
-margin_bottom = 557.0
-custom_styles/panel = SubResource( 7 )
+margin_left = 425.0
+margin_top = 315.0
+margin_right = 597.0
+margin_bottom = 335.0
+custom_styles/normal = SubResource( 19 )
 
 [node name="4" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 740, 131.235 )
+position = Vector2( 626, 131.235 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 7 )
 centered = false
 
-[node name="color4" type="Panel" parent="."]
+[node name="color4" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 730.0
-margin_top = 537.0
-margin_right = 902.0
-margin_bottom = 557.0
-custom_styles/panel = SubResource( 8 )
+margin_left = 616.0
+margin_top = 315.0
+margin_right = 788.0
+margin_bottom = 335.0
+custom_styles/normal = SubResource( 14 )
 
-[node name="5" type="Sprite" parent="." groups=[
+[node name="45" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 134, 357.923 )
+position = Vector2( 813, 131.235 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 8 )
 centered = false
 
-[node name="color5" type="Panel" parent="."]
+[node name="color45" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 118.0
+margin_left = 803.0
 margin_top = 315.0
-margin_right = 290.0
+margin_right = 975.0
 margin_bottom = 335.0
-custom_styles/panel = SubResource( 9 )
+custom_styles/normal = SubResource( 22 )
 
-[node name="6" type="Sprite" parent="." groups=[
+[node name="5" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 336, 357.923 )
+position = Vector2( 67, 357.923 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 9 )
 centered = false
 
-[node name="color6" type="Panel" parent="."]
+[node name="color5" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 528.0
-margin_top = 315.0
-margin_right = 700.0
-margin_bottom = 335.0
-custom_styles/panel = SubResource( 10 )
+margin_left = 51.0
+margin_top = 537.0
+margin_right = 223.0
+margin_bottom = 557.0
+custom_styles/normal = SubResource( 21 )
 
-[node name="7" type="Sprite" parent="." groups=[
+[node name="6" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 538, 357.923 )
+position = Vector2( 248, 357.923 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 10 )
 centered = false
 
-[node name="color7" type="Panel" parent="."]
+[node name="color6" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 528.0
+margin_left = 239.0
 margin_top = 537.0
-margin_right = 700.0
+margin_right = 411.0
 margin_bottom = 557.0
-custom_styles/panel = SubResource( 11 )
+custom_styles/normal = SubResource( 16 )
 
-[node name="8" type="Sprite" parent="." groups=[
+[node name="7" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 740, 357.923 )
+position = Vector2( 435, 357.923 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 11 )
 centered = false
 
-[node name="color8" type="Panel" parent="."]
+[node name="color7" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 118.0
+margin_left = 425.0
 margin_top = 537.0
-margin_right = 290.0
+margin_right = 597.0
 margin_bottom = 557.0
-custom_styles/panel = SubResource( 12 )
+custom_styles/normal = SubResource( 20 )
+
+[node name="8" type="Sprite" parent="." groups=[
+"yogaFigure",
+]]
+position = Vector2( 626, 357.923 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="color8" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 616.0
+margin_top = 537.0
+margin_right = 788.0
+margin_bottom = 557.0
+custom_styles/normal = SubResource( 17 )
+
+[node name="10" type="Sprite" parent="." groups=[
+"yogaFigure",
+]]
+position = Vector2( 809, 357.923 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="color10" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 799.0
+margin_top = 537.0
+margin_right = 971.0
+margin_bottom = 557.0
+custom_styles/normal = SubResource( 23 )
 
 [node name="nextSceneBtn" type="Button" parent="."]
 margin_left = 942.841
@@ -382,4 +446,14 @@ flat = true
 autoplay = "load"
 anims/load = SubResource( 13 )
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="color1" to="." method="_on_color1_pressed"]
+[connection signal="pressed" from="color2" to="." method="_on_color2_pressed"]
+[connection signal="pressed" from="color3" to="." method="_on_color3_pressed"]
+[connection signal="pressed" from="color4" to="." method="_on_color4_pressed"]
+[connection signal="pressed" from="color45" to="." method="_on_color45_pressed"]
+[connection signal="pressed" from="color5" to="." method="_on_color5_pressed"]
+[connection signal="pressed" from="color6" to="." method="_on_color6_pressed"]
+[connection signal="pressed" from="color7" to="." method="_on_color7_pressed"]
+[connection signal="pressed" from="color8" to="." method="_on_color8_pressed"]
+[connection signal="pressed" from="color10" to="." method="_on_color10_pressed"]
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]
