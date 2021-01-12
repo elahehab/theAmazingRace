@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/images/Amazing Race Logo.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/images/virtualTB.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/images/Notebook.png" type="Texture" id=6]
 [ext_resource path="res://scripts/readyBtn.gd" type="Script" id=7]
 [ext_resource path="res://assets/images/readyBtn.png" type="Texture" id=8]
+[ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "leftToRight"
@@ -220,28 +221,28 @@ Before we start, please prepare these two items:"
 autowrap = true
 
 [node name="pen" type="Sprite" parent="."]
-position = Vector2( 597.924, 507.22 )
-scale = Vector2( 0.20217, 0.20217 )
+position = Vector2( 599.424, 485.72 )
+scale = Vector2( 0.13381, 0.13381 )
 texture = ExtResource( 5 )
 
 [node name="paper" type="Sprite" parent="."]
-position = Vector2( 748.614, 505.713 )
-scale = Vector2( 0.225722, 0.225722 )
+position = Vector2( 728.614, 482.713 )
+scale = Vector2( 0.151503, 0.151503 )
 texture = ExtResource( 6 )
 
 [node name="penLabel" type="Label" parent="."]
-margin_left = 591.463
-margin_top = 559.522
-margin_right = 640.463
-margin_bottom = 591.522
+margin_left = 582.463
+margin_top = 527.0
+margin_right = 631.463
+margin_bottom = 559.0
 custom_fonts/font = ExtResource( 4 )
 text = "Pen"
 
 [node name="paperLabel" type="Label" parent="."]
-margin_left = 687.567
-margin_top = 562.238
-margin_right = 831.567
-margin_bottom = 588.238
+margin_left = 662.567
+margin_top = 527.238
+margin_right = 806.567
+margin_bottom = 553.238
 custom_fonts/font = ExtResource( 4 )
 text = "Notebook/Paper"
 
@@ -254,10 +255,12 @@ flat = true
 script = ExtResource( 7 )
 
 [node name="Sprite" type="Sprite" parent="Button"]
-position = Vector2( 80.8127, 48.9886 )
+position = Vector2( 80.8127, 12.9886 )
 scale = Vector2( 0.55564, 0.55564 )
 texture = ExtResource( 8 )
 hframes = 2
+
+[node name="guide" parent="." instance=ExtResource( 9 )]
 [connection signal="mouse_entered" from="Button" to="Button" method="_on_Button_mouse_entered"]
 [connection signal="mouse_exited" from="Button" to="Button" method="_on_Button_mouse_exited"]
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

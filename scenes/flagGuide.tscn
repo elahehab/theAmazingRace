@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/flagGuide.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Polygon2D.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 39
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 3 )
+
+[node name="flagGuide" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="btn" type="Button" parent="."]
+margin_right = 130.0
+margin_bottom = 41.0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="Polygon2D" type="Polygon2D" parent="btn"]
+scale = Vector2( 0.72327, 0.493151 )
+uv = PoolVector2Array( 31.4516, 184.677, 31.4516, 1.6129, 220.455, 0.954529, 275.806, 93.5484, 215.909, 185.045 )
+script = ExtResource( 2 )
+OutLine = Color( 1, 1, 1, 1 )
+
+[node name="Label" type="Label" parent="btn"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 46.3904
+margin_top = -6.41098
+margin_right = 86.3908
+margin_bottom = 42.589
+custom_fonts/font = SubResource( 1 )
+text = "?"
+align = 1
+
+[node name="countryTxt" type="Label" parent="btn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 24.0
+margin_right = -20.0
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+autowrap = true
+[connection signal="pressed" from="btn" to="." method="_on_btn_pressed"]

@@ -14,9 +14,5 @@ func _ready():
 
 
 func _on_nextSceneBtn_pressed():
-	get_node("/root/global").countryTxt = 'HOME TO EUROPE\'S THREE ACTIVE VOLCANOES'
-	get_node("/root/global").cityTxt = 'THE RULES OF THE ANCIENT EMPIRE'
-	get_node("/root/global").monumentTxt = 'THE FLAVIAN AMPHITHEATER'
-	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-	get_node("/root/global").travelSceneNextScene = 'res://scenes/italy/italyTitle.tscn'
+	get_node("/root/global").setItalyRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")

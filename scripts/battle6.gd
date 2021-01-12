@@ -20,9 +20,5 @@ func _on_readyBtn_pressed():
 
 
 func _on_nextSceneBtn_pressed():
-	get_node("/root/global").countryTxt = 'THE LAND OF THE FREE'
-	get_node("/root/global").cityTxt = 'KRUNG THEP MAHA NAKHON'
-	get_node("/root/global").monumentTxt = 'THE PRESIDENCE OF KINGS OF SIAM'
-	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-	get_node("/root/global").travelSceneNextScene = 'res://scenes/thailand/thailandTitle.tscn'
+	get_node("/root/global").setThaiRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")

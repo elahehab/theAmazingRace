@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/france.gd" type="Script" id=1]
 [ext_resource path="res://scenes/france/franceBack.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/mainLoadAnim.tres" type="Animation" id=7]
+[ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 65
@@ -22,27 +23,24 @@ script = ExtResource( 1 )
 [node name="franceBack" parent="." instance=ExtResource( 2 )]
 
 [node name="woman" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 880.283, 650 )
+position = Vector2( 880.283, 482 )
 scale = Vector2( 0.939941, 0.939941 )
 texture = ExtResource( 3 )
 
 [node name="title" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 56.2589
-margin_top = 80.872
+margin_top = 70.872
 margin_right = 479.259
-margin_bottom = 160.872
+margin_bottom = 150.872
 rect_rotation = -5.0
 custom_fonts/font = SubResource( 1 )
 text = "LIGHT UP MY LIFE"
 
 [node name="text" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -300.0
-margin_top = 140.0
-margin_right = 428.0
-margin_bottom = 497.0
+margin_left = 69.0
+margin_top = 120.0
+margin_right = 797.0
+margin_bottom = 477.0
 custom_fonts/font = SubResource( 2 )
 text = "
 Welcome to the Eiffel Tower in Paris, France!
@@ -57,8 +55,13 @@ autowrap = true
 
 [node name="readyBtn" parent="." instance=ExtResource( 6 )]
 modulate = Color( 1, 1, 1, 0 )
+margin_top = 482.501
+margin_bottom = 533.501
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
 anims/load = ExtResource( 7 )
+
+[node name="guide" parent="." instance=ExtResource( 8 )]
+step = 6
 [connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

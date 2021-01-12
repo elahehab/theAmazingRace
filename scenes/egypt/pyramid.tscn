@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/pyramid.gd" type="Script" id=1]
 [ext_resource path="res://scenes/egypt/pyramidBack.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 74
@@ -40,7 +41,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 3, 5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 856.859, 600 ), Vector2( 856.859, 600 ), Vector2( 856.859, 390.508 ) ]
+"values": [ Vector2( 856.859, 600 ), Vector2( 856.859, 600 ), Vector2( 856.859, 354.508 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Egyptian Woman:modulate")
@@ -64,7 +65,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 3, 5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -300, 199 ), Vector2( -300, 199 ), Vector2( 54, 199 ) ]
+"values": [ Vector2( -300, 180 ), Vector2( -300, 180 ), Vector2( 54, 180 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("text:modulate")
@@ -97,13 +98,11 @@ script = ExtResource( 1 )
 [node name="pyramidBack" parent="." instance=ExtResource( 2 )]
 
 [node name="Egyptian Woman" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 856.859, 600 )
+position = Vector2( 856.859, 354.508 )
 scale = Vector2( 0.769314, 1 )
 texture = ExtResource( 3 )
 
 [node name="title" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 52.5965
 margin_top = 79.8688
 margin_right = 742.596
@@ -113,11 +112,10 @@ custom_fonts/font = SubResource( 1 )
 text = "THE ANCIENT HISTORIAN"
 
 [node name="text" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = -300.0
-margin_top = 199.0
-margin_right = 391.0
-margin_bottom = 559.0
+margin_left = 54.0
+margin_top = 180.0
+margin_right = 745.0
+margin_bottom = 540.0
 custom_fonts/font = SubResource( 2 )
 text = "Welcome to the Great Pyramids in Giza, Egypt!
 Our country is known widely for the history of the ancient civilization of Egypt.
@@ -130,11 +128,14 @@ autowrap = true
 [node name="readyBtn" parent="." instance=ExtResource( 6 )]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 346.614
-margin_top = 510.855
+margin_top = 479.855
 margin_right = 561.614
-margin_bottom = 561.855
+margin_bottom = 530.855
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
 anims/load = SubResource( 3 )
+
+[node name="guide" parent="." instance=ExtResource( 7 )]
+step = 3
 [connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

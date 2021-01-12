@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/images/roadBlock/Road Block.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 75
+size = 73
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -28,7 +28,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1, 2.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 62.425, 81.6225 ), Vector2( 62.425, 81.6225 ), Vector2( 359.425, 81.6225 ) ]
+"values": [ Vector2( 62.425, 81.6225 ), Vector2( 62.425, 81.6225 ), Vector2( 351.425, 81.6225 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("title:modulate")
@@ -52,7 +52,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 2.2, 4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 60, 176 ), Vector2( 365, 176 ) ]
+"values": [ Vector2( 60, 176 ), Vector2( 379, 176 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("text:modulate")
@@ -61,10 +61,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 2.2, 4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 2.2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
 }
 
 [node name="roadBlockInst" type="Node2D"]
@@ -73,20 +73,22 @@ script = ExtResource( 1 )
 [node name="roadBlock" parent="." instance=ExtResource( 2 )]
 
 [node name="title" type="Label" parent="."]
-modulate = Color( 1, 0, 0, 0.85 )
-margin_left = 314.875
+modulate = Color( 1, 0, 0, 0 )
+margin_left = 62.425
 margin_top = 81.6225
-margin_right = 972.88
+margin_right = 720.43
 margin_bottom = 179.622
 custom_fonts/font = SubResource( 1 )
 text = "REVERSE PICTIONARY"
+align = 1
+valign = 1
 
 [node name="text" type="Label" parent="."]
 modulate = Color( 0, 0, 0, 0 )
-margin_left = 60.0
+margin_left = 379.0
 margin_top = 176.0
-margin_right = 684.0
-margin_bottom = 506.0
+margin_right = 992.0
+margin_bottom = 513.0
 custom_fonts/font = SubResource( 2 )
 text = "1. Choose 1 Drawer and the rest of the Team are communicators.
 2. The drawer will have to face away from the screen while drawing. The rest of the team will be able to see drawing and they have to describe the drawing to the drawer.
@@ -103,8 +105,8 @@ margin_bottom = 596.0
 flat = true
 
 [node name="Road Block" type="Sprite" parent="."]
-position = Vector2( 194.525, 299.047 )
-scale = Vector2( 1.138, 1.138 )
+position = Vector2( 217, 280 )
+scale = Vector2( 1.092, 1.066 )
 texture = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -63,11 +63,7 @@ func _on_tier1_pressed():
 
 
 func _on_nextSceneBtn_pressed():
-	get_node("/root/global").countryTxt = 'KAMPUCHEA THE ANCIENT KHMER KINGDOM'
-	get_node("/root/global").cityTxt = 'IN THE DEFEAT OF SIAM'
-	get_node("/root/global").monumentTxt = 'THE DEDICATED TEMPLE OF THE GOD VISHNU'
-	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-	get_node("/root/global").travelSceneNextScene = 'res://scenes/cambodia/cambodiaTitle.tscn'
+	get_node("/root/global").setCambodiaRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
 
 

@@ -105,7 +105,7 @@ autoplay = "load"
 anims/load = SubResource( 3 )
 
 [node name="Road Block" type="Sprite" parent="."]
-position = Vector2( 194.525, 299.047 )
-scale = Vector2( 1.13772, 1.13772 )
+position = Vector2( 217, 280 )
+scale = Vector2( 1.09181, 1.06605 )
 texture = ExtResource( 5 )
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]

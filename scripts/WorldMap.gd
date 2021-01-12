@@ -20,9 +20,5 @@ func showGoBtn():
 		get_node("AnimationPlayer").play("buttonFade")
 
 func _on_readyBtn_pressed():
-	get_node("/root/global").countryTxt = 'THE PLACE OF CHAKRA'
-	get_node("/root/global").cityTxt = 'GOLDEN TRIANGLE TOURIST CIRCUIT'
-	get_node("/root/global").monumentTxt = 'THE GRAND BURIAL CHAMBER OF THE EMPEROR'
-	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-	get_node("/root/global").travelSceneNextScene = 'res://scenes/tajmahal/TajMahalTitle.tscn'
+	get_node("/root/global").setIndiaRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")

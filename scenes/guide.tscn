@@ -1,0 +1,192 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scenes/flagGuide.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/images/countryFlags/Thai Flag.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/images/countryFlags/Italy Flag.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/countryFlags/RED.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/countryFlags/Greece Flag.jpg" type="Texture" id=5]
+[ext_resource path="res://assets/images/countryFlags/France Flag.jpg" type="Texture" id=6]
+[ext_resource path="res://assets/images/countryFlags/USA Flag.jpg" type="Texture" id=7]
+[ext_resource path="res://assets/images/countryFlags/Cambodia Flag.jpg" type="Texture" id=8]
+[ext_resource path="res://assets/images/countryFlags/Egypt Flag.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/countryFlags/India Flag.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/countryFlags/GRAY.png" type="Texture" id=11]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+export (int) var step
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	if(step == 1):
+		get_node(\"start\").showInfo()
+	elif(step == 2):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+	elif(step == 3):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+	elif(step == 4):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+	elif(step == 5):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+		get_node(\"usa\").showInfo()
+	elif(step == 6):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+		get_node(\"usa\").showInfo()
+		get_node(\"france\").showInfo()
+	elif(step == 7):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+		get_node(\"usa\").showInfo()
+		get_node(\"france\").showInfo()
+		get_node(\"greece\").showInfo()
+	elif(step == 8):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+		get_node(\"usa\").showInfo()
+		get_node(\"france\").showInfo()
+		get_node(\"greece\").showInfo()
+		get_node(\"roadBlock\").showInfo()
+	elif(step == 9):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+		get_node(\"usa\").showInfo()
+		get_node(\"france\").showInfo()
+		get_node(\"greece\").showInfo()
+		get_node(\"roadBlock\").showInfo()
+		get_node(\"italy\").showInfo()
+	elif(step == 10):
+		get_node(\"start\").showInfo()
+		get_node(\"india\").showInfo()
+		get_node(\"egypt\").showInfo()
+		get_node(\"cambodia\").showInfo()
+		get_node(\"usa\").showInfo()
+		get_node(\"france\").showInfo()
+		get_node(\"greece\").showInfo()
+		get_node(\"roadBlock\").showInfo()
+		get_node(\"italy\").showInfo()
+		get_node(\"thai\").showInfo()
+		
+	get_node(\"india/btn\").connect(\"pressed\", self, \"gotoIndia\")
+	get_node(\"cambodia/btn\").connect(\"pressed\", self, \"gotoCambodia\")
+	get_node(\"egypt/btn\").connect(\"pressed\", self, \"gotoEgypt\")
+	get_node(\"italy/btn\").connect(\"pressed\", self, \"gotoItaly\")
+	get_node(\"thai/btn\").connect(\"pressed\", self, \"gotoThai\")
+	get_node(\"roadBlock/btn\").connect(\"pressed\", self, \"gotoRoadBlock\")
+	get_node(\"greece/btn\").connect(\"pressed\", self, \"gotoGreece\")
+	get_node(\"france/btn\").connect(\"pressed\", self, \"gotoFrance\")
+	get_node(\"usa/btn\").connect(\"pressed\", self, \"gotoUSA\")
+	get_node(\"start/btn\").connect(\"pressed\", self, \"gotoStart\")
+
+func gotoIndia():
+	get_node(\"/root/global\").setIndiaRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+
+func gotoCambodia():
+	get_node(\"/root/global\").setCambodiaRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+	
+func gotoEgypt():
+	get_node(\"/root/global\").setEgyptRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+	
+func gotoItaly():
+	get_node(\"/root/global\").setItalyRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+	
+func gotoThai():
+	get_node(\"/root/global\").setThaiRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+
+func gotoRoadBlock():
+	get_tree().change_scene(\"res://scenes/roadBlock/roadBlock.tscn\")
+
+func gotoGreece():
+	get_node(\"/root/global\").setGreeceRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+
+func gotoFrance():
+	get_node(\"/root/global\").setFranceRouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+
+func gotoUSA():
+	get_node(\"/root/global\").setUSARouteInfo()
+	get_tree().change_scene(\"res://scenes/RouteInfo.tscn\")
+	
+func gotoStart():
+	get_node(\"start\").showInfo()
+	get_tree().change_scene(\"res://scenes/WorldMap.tscn\")
+
+
+"
+
+[node name="guide" type="Node2D"]
+script = SubResource( 1 )
+
+[node name="thai" parent="." instance=ExtResource( 1 )]
+position = Vector2( 925, 558.204 )
+flagFile = ExtResource( 2 )
+flagTxt = "THE GRAND PALACE"
+
+[node name="italy" parent="." instance=ExtResource( 1 )]
+position = Vector2( 825, 558.204 )
+flagFile = ExtResource( 3 )
+flagTxt = "COLOSSEUM"
+
+[node name="roadBlock" parent="." instance=ExtResource( 1 )]
+position = Vector2( 717, 558.204 )
+flagFile = ExtResource( 4 )
+flagTxt = "ROAD BLOCK"
+
+[node name="greece" parent="." instance=ExtResource( 1 )]
+position = Vector2( 609, 558.204 )
+flagFile = ExtResource( 5 )
+flagTxt = "ACROPOLIS"
+
+[node name="france" parent="." instance=ExtResource( 1 )]
+position = Vector2( 501, 558.204 )
+flagFile = ExtResource( 6 )
+flagTxt = "EIFFEL TOWER"
+
+[node name="usa" parent="." instance=ExtResource( 1 )]
+position = Vector2( 393, 558.204 )
+flagFile = ExtResource( 7 )
+flagTxt = "MOUNT RUSHMORE"
+
+[node name="cambodia" parent="." instance=ExtResource( 1 )]
+position = Vector2( 285, 558.204 )
+flagFile = ExtResource( 8 )
+flagTxt = "ANGKOR WAT"
+
+[node name="egypt" parent="." instance=ExtResource( 1 )]
+position = Vector2( 177, 558.204 )
+flagFile = ExtResource( 9 )
+flagTxt = "GREAT PYRAMIDS"
+
+[node name="india" parent="." instance=ExtResource( 1 )]
+position = Vector2( 70.6351, 558.204 )
+flagFile = ExtResource( 10 )
+flagTxt = "TAJ MAHAL"
+
+[node name="start" parent="." instance=ExtResource( 1 )]
+position = Vector2( -31.3649, 558.204 )
+flagFile = ExtResource( 11 )
+flagTxt = "STARTING ACTIVITY"

@@ -89,11 +89,7 @@ func loadNextFlag():
 		index = index + 1
 		pageNum = pageNum + 1
 	else:
-		get_node("/root/global").countryTxt = 'THE ANTHEM OF "LA MARSEILLAISE"'
-		get_node("/root/global").cityTxt = 'THE CITY OF LIGHT'
-		get_node("/root/global").monumentTxt = 'THE "LA DAME DE FER" WHAT DOES IT STAND FOR?'
-		get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-		get_node("/root/global").travelSceneNextScene = 'res://scenes/france/franceTitle.tscn'
+		get_node("/root/global").setFranceRouteInfo()
 		get_tree().change_scene("res://scenes/RouteInfo.tscn")
 
 

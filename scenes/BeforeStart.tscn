@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/BeforeStart.gd" type="Script" id=1]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 3 )
+
+[node name="BeforeStart" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.486275, 0.486275, 0.486275, 1 )
+script = ExtResource( 1 )
+
+[node name="readyBtn" parent="." instance=ExtResource( 2 )]
+margin_left = 356.4
+margin_top = 272.919
+margin_right = 671.4
+margin_bottom = 347.919
+custom_fonts/font = SubResource( 1 )
+text = "START"
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

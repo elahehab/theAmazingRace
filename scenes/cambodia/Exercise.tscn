@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scripts/Exercise.gd" type="Script" id=1]
 [ext_resource path="res://scenes/cambodia/cambodiaBack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -44,50 +45,63 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 0.278431, 0, 0.670588, 1 )
+bg_color = Color( 1, 0.0862745, 0.580392, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0, 0.431373, 1, 1 )
+bg_color = Color( 0.278431, 0, 0.670588, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id=9]
-bg_color = Color( 0.929412, 0.164706, 0, 1 )
+bg_color = Color( 0, 0.431373, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id=10]
-bg_color = Color( 0.956863, 0.929412, 0, 1 )
+bg_color = Color( 0.929412, 0.164706, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.956863, 0.929412, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=13]
 bg_color = Color( 0, 0, 0, 1 )
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
 
-[sub_resource type="DynamicFont" id=12]
+[sub_resource type="DynamicFont" id=14]
 size = 50
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=13]
-size = 20
+[sub_resource type="DynamicFont" id=15]
+size = 18
 font_data = ExtResource( 4 )
 
-[sub_resource type="Animation" id=14]
-resource_name = "load"
+[sub_resource type="Animation" id=16]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("color_1:modulate")
@@ -200,68 +214,84 @@ custom_fonts/font = SubResource( 1 )
 text = "CHOOSE YOUR COLOURS"
 
 [node name="color_1" type="Button" parent="."]
-margin_left = 118.0
-margin_top = 313.149
-margin_right = 290.0
-margin_bottom = 333.149
+margin_left = 47.0
+margin_top = 285.149
+margin_right = 219.0
+margin_bottom = 305.149
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 3 )
 
 [node name="color_2" type="Button" parent="."]
-margin_left = 327.0
-margin_top = 313.149
-margin_right = 499.0
-margin_bottom = 333.149
+margin_left = 426.0
+margin_top = 285.149
+margin_right = 598.0
+margin_bottom = 305.149
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 4 )
 
 [node name="color_3" type="Button" parent="."]
-margin_left = 528.0
-margin_top = 313.149
-margin_right = 700.0
-margin_bottom = 333.149
+margin_left = 615.0
+margin_top = 285.149
+margin_right = 787.0
+margin_bottom = 305.149
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 5 )
 
 [node name="color_4" type="Button" parent="."]
-margin_left = 730.0
-margin_top = 315.0
-margin_right = 902.0
-margin_bottom = 335.0
+margin_left = 804.0
+margin_top = 287.0
+margin_right = 976.0
+margin_bottom = 307.0
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 6 )
 
-[node name="color_5" type="Button" parent="."]
-margin_left = 118.0
-margin_top = 522.0
-margin_right = 290.0
-margin_bottom = 542.0
+[node name="color_45" type="Button" parent="."]
+margin_left = 239.302
+margin_top = 286.949
+margin_right = 411.302
+margin_bottom = 306.949
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 7 )
 
-[node name="color_6" type="Button" parent="."]
-margin_left = 327.0
-margin_top = 522.0
-margin_right = 499.0
-margin_bottom = 542.0
+[node name="color_5" type="Button" parent="."]
+margin_left = 47.0
+margin_top = 494.0
+margin_right = 219.0
+margin_bottom = 514.0
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 8 )
 
-[node name="color_7" type="Button" parent="."]
-margin_left = 528.0
-margin_top = 522.0
-margin_right = 700.0
-margin_bottom = 542.0
+[node name="color_6" type="Button" parent="."]
+margin_left = 426.0
+margin_top = 494.0
+margin_right = 598.0
+margin_bottom = 514.0
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 9 )
 
-[node name="color_8" type="Button" parent="."]
-margin_left = 730.0
-margin_top = 522.0
-margin_right = 902.0
-margin_bottom = 542.0
+[node name="color_7" type="Button" parent="."]
+margin_left = 615.0
+margin_top = 494.0
+margin_right = 787.0
+margin_bottom = 514.0
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = SubResource( 10 )
+
+[node name="color_8" type="Button" parent="."]
+margin_left = 804.0
+margin_top = 494.0
+margin_right = 976.0
+margin_bottom = 514.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 11 )
+
+[node name="color_10" type="Button" parent="."]
+margin_left = 244.201
+margin_top = 493.949
+margin_right = 416.201
+margin_bottom = 513.949
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 12 )
 
 [node name="nextSceneBtn" type="Button" parent="."]
 margin_left = 940.99
@@ -271,295 +301,341 @@ margin_bottom = 596.465
 flat = true
 
 [node name="exe1" type="Panel" parent="."]
-visible = false
-margin_left = 133.0
-margin_top = 146.0
-margin_right = 264.0
-margin_bottom = 297.0
-custom_styles/panel = SubResource( 11 )
+margin_left = 70.0
+margin_top = 118.0
+margin_right = 201.0
+margin_bottom = 269.0
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num1" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 154.0
-margin_top = 163.0
-margin_right = 244.0
-margin_bottom = 223.0
-custom_fonts/font = SubResource( 12 )
+margin_left = 91.0
+margin_top = 135.0
+margin_right = 181.0
+margin_bottom = 197.0
+custom_fonts/font = SubResource( 14 )
 text = "20"
 align = 1
 valign = 1
 
 [node name="l1" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 154.0
-margin_top = 218.0
-margin_right = 244.0
-margin_bottom = 278.0
-custom_fonts/font = SubResource( 13 )
+margin_left = 91.0
+margin_top = 190.0
+margin_right = 181.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 15 )
 text = "Jumping
 Jacks"
 align = 1
 valign = 1
 
 [node name="exe2" type="Panel" parent="."]
-visible = false
-margin_left = 345.0
-margin_top = 146.0
-margin_right = 476.0
-margin_bottom = 297.0
-custom_styles/panel = SubResource( 11 )
+margin_left = 452.0
+margin_top = 118.0
+margin_right = 583.0
+margin_bottom = 269.0
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num2" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 366.0
-margin_top = 163.0
-margin_right = 456.0
-margin_bottom = 225.0
-custom_fonts/font = SubResource( 12 )
+margin_left = 473.0
+margin_top = 135.0
+margin_right = 563.0
+margin_bottom = 197.0
+custom_fonts/font = SubResource( 14 )
 text = "20"
 align = 1
 valign = 1
 
 [node name="l2" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 366.0
-margin_top = 218.0
-margin_right = 456.0
-margin_bottom = 278.0
-custom_fonts/font = SubResource( 13 )
+margin_left = 473.0
+margin_top = 190.0
+margin_right = 563.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 15 )
 text = "Squats"
 align = 1
 valign = 1
 
 [node name="exe3" type="Panel" parent="."]
-visible = false
-margin_left = 547.0
-margin_top = 146.0
-margin_right = 678.0
-margin_bottom = 297.0
-custom_styles/panel = SubResource( 11 )
+margin_left = 639.0
+margin_top = 118.0
+margin_right = 770.0
+margin_bottom = 269.0
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num3" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 568.0
-margin_top = 163.0
-margin_right = 658.0
-margin_bottom = 225.0
-custom_fonts/font = SubResource( 12 )
+margin_left = 660.0
+margin_top = 135.0
+margin_right = 750.0
+margin_bottom = 197.0
+custom_fonts/font = SubResource( 14 )
 text = "15"
 align = 1
 valign = 1
 
 [node name="l3" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 568.0
-margin_top = 218.0
-margin_right = 658.0
-margin_bottom = 278.0
-custom_fonts/font = SubResource( 13 )
+margin_left = 660.0
+margin_top = 190.0
+margin_right = 750.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 15 )
 text = "Push Ups"
 align = 1
 valign = 1
 
 [node name="exe4" type="Panel" parent="."]
-visible = false
-margin_left = 739.0
-margin_top = 146.0
-margin_right = 870.0
-margin_bottom = 297.0
-custom_styles/panel = SubResource( 11 )
+margin_left = 821.0
+margin_top = 118.0
+margin_right = 952.0
+margin_bottom = 269.0
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num4" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 761.851
-margin_top = 163.0
-margin_right = 851.851
-margin_bottom = 225.0
-custom_fonts/font = SubResource( 12 )
+margin_left = 843.851
+margin_top = 135.0
+margin_right = 933.851
+margin_bottom = 262.0
+custom_fonts/font = SubResource( 14 )
 text = "20
 "
 align = 1
 valign = 1
 
 [node name="l4" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 760.0
-margin_top = 218.0
-margin_right = 850.0
-margin_bottom = 278.0
-custom_fonts/font = SubResource( 13 )
+margin_left = 842.0
+margin_top = 190.0
+margin_right = 932.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 15 )
 text = "Lunges"
 align = 1
 valign = 1
 
-[node name="exe5" type="Panel" parent="."]
-visible = false
-margin_left = 131.997
-margin_top = 351.419
-margin_right = 262.997
-margin_bottom = 502.419
-custom_styles/panel = SubResource( 11 )
+[node name="exe9" type="Panel" parent="."]
+margin_left = 259.302
+margin_top = 117.949
+margin_right = 390.302
+margin_bottom = 268.949
+custom_styles/panel = SubResource( 13 )
 
-[node name="Num5" type="Label" parent="."]
-visible = false
+[node name="Num9" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 154.848
-margin_top = 368.419
-margin_right = 244.848
-margin_bottom = 495.419
-custom_fonts/font = SubResource( 12 )
+margin_left = 282.153
+margin_top = 134.949
+margin_right = 372.153
+margin_bottom = 261.949
+custom_fonts/font = SubResource( 14 )
+text = "20
+"
+align = 1
+valign = 1
+
+[node name="l9" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 271.302
+margin_top = 189.949
+margin_right = 379.302
+margin_bottom = 249.949
+custom_fonts/font = SubResource( 15 )
+text = "Buddha Claps"
+align = 1
+valign = 1
+
+[node name="exe5" type="Panel" parent="."]
+margin_left = 68.997
+margin_top = 323.419
+margin_right = 199.997
+margin_bottom = 474.419
+custom_styles/panel = SubResource( 13 )
+
+[node name="Num5" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 91.848
+margin_top = 340.419
+margin_right = 181.848
+margin_bottom = 467.419
+custom_fonts/font = SubResource( 14 )
 text = "15
 "
 align = 1
 valign = 1
 
 [node name="l5" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 152.997
-margin_top = 423.419
-margin_right = 242.997
-margin_bottom = 483.419
-custom_fonts/font = SubResource( 13 )
+margin_left = 89.997
+margin_top = 395.419
+margin_right = 179.997
+margin_bottom = 455.419
+custom_fonts/font = SubResource( 15 )
 text = "Tricep
 Dips"
 align = 1
 valign = 1
 
 [node name="exe6" type="Panel" parent="."]
-visible = false
-margin_left = 346.997
-margin_top = 351.419
-margin_right = 477.997
-margin_bottom = 502.419
-custom_styles/panel = SubResource( 11 )
+margin_left = 453.997
+margin_top = 323.419
+margin_right = 584.997
+margin_bottom = 474.419
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num6" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 369.848
-margin_top = 368.419
-margin_right = 459.848
-margin_bottom = 495.419
-custom_fonts/font = SubResource( 12 )
-text = "90
+margin_left = 476.848
+margin_top = 340.419
+margin_right = 566.848
+margin_bottom = 467.419
+custom_fonts/font = SubResource( 14 )
+text = "30
 "
 align = 1
 valign = 1
 
 [node name="l6" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 360.147
-margin_top = 423.419
-margin_right = 465.147
-margin_bottom = 483.419
-custom_fonts/font = SubResource( 13 )
+margin_left = 467.147
+margin_top = 395.419
+margin_right = 572.147
+margin_bottom = 455.419
+custom_fonts/font = SubResource( 15 )
 text = "Seconds
 Wall Squats"
 align = 1
 valign = 1
 
 [node name="exe7" type="Panel" parent="."]
-visible = false
-margin_left = 546.997
-margin_top = 351.419
-margin_right = 677.997
-margin_bottom = 502.419
-custom_styles/panel = SubResource( 11 )
+margin_left = 637.946
+margin_top = 323.419
+margin_right = 768.946
+margin_bottom = 474.419
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num7" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 569.848
-margin_top = 368.419
-margin_right = 659.848
-margin_bottom = 495.419
-custom_fonts/font = SubResource( 12 )
-text = "90
+margin_left = 660.797
+margin_top = 340.419
+margin_right = 750.797
+margin_bottom = 467.419
+custom_fonts/font = SubResource( 14 )
+text = "30
 "
 align = 1
 valign = 1
 
 [node name="l7" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 560.147
-margin_top = 423.419
-margin_right = 665.147
-margin_bottom = 483.419
-custom_fonts/font = SubResource( 13 )
+margin_left = 651.096
+margin_top = 395.419
+margin_right = 756.096
+margin_bottom = 455.419
+custom_fonts/font = SubResource( 15 )
 text = "Seconds
 Plank"
 align = 1
 valign = 1
 
 [node name="exe8" type="Panel" parent="."]
-visible = false
-margin_left = 740.997
-margin_top = 351.419
-margin_right = 871.997
-margin_bottom = 502.419
-custom_styles/panel = SubResource( 11 )
+margin_left = 822.997
+margin_top = 323.419
+margin_right = 953.997
+margin_bottom = 474.419
+custom_styles/panel = SubResource( 13 )
 
 [node name="Num8" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 763.848
-margin_top = 368.419
-margin_right = 853.848
-margin_bottom = 495.419
-custom_fonts/font = SubResource( 12 )
-text = "10
+margin_left = 845.848
+margin_top = 340.419
+margin_right = 935.848
+margin_bottom = 467.419
+custom_fonts/font = SubResource( 14 )
+text = "5
 "
 align = 1
 valign = 1
 
 [node name="l8" type="Label" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 754.147
-margin_top = 423.419
-margin_right = 859.147
-margin_bottom = 483.419
-custom_fonts/font = SubResource( 13 )
+margin_left = 836.147
+margin_top = 395.419
+margin_right = 941.147
+margin_bottom = 455.419
+custom_fonts/font = SubResource( 15 )
 text = "Burpees"
+align = 1
+valign = 1
+
+[node name="exe10" type="Panel" parent="."]
+margin_left = 260.198
+margin_top = 323.368
+margin_right = 391.198
+margin_bottom = 474.368
+custom_styles/panel = SubResource( 13 )
+
+[node name="Num10" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 283.049
+margin_top = 340.368
+margin_right = 373.049
+margin_bottom = 467.368
+custom_fonts/font = SubResource( 14 )
+text = "30
+"
+align = 1
+valign = 1
+
+[node name="l10" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 269.348
+margin_top = 397.368
+margin_right = 386.348
+margin_bottom = 457.368
+custom_fonts/font = SubResource( 15 )
+text = "Seconds
+Arm Rotation"
 align = 1
 valign = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
-anims/load = SubResource( 14 )
+anims/load = SubResource( 16 )
+
+[node name="guide" parent="." instance=ExtResource( 5 )]
+step = 4
 [connection signal="pressed" from="color_1" to="." method="_on_color_1_pressed"]
 [connection signal="pressed" from="color_2" to="." method="_on_color_2_pressed"]
 [connection signal="pressed" from="color_3" to="." method="_on_color_3_pressed"]
 [connection signal="pressed" from="color_4" to="." method="_on_color_4_pressed"]
+[connection signal="pressed" from="color_45" to="." method="_on_color_45_pressed"]
 [connection signal="pressed" from="color_5" to="." method="_on_color_5_pressed"]
 [connection signal="pressed" from="color_6" to="." method="_on_color_6_pressed"]
 [connection signal="pressed" from="color_7" to="." method="_on_color_7_pressed"]
 [connection signal="pressed" from="color_8" to="." method="_on_color_8_pressed"]
+[connection signal="pressed" from="color_10" to="." method="_on_color_10_pressed"]
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]

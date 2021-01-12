@@ -90,8 +90,8 @@ margin_bottom = 596.99
 flat = true
 
 [node name="Road Block" type="Sprite" parent="."]
-position = Vector2( 194.525, 299.047 )
-scale = Vector2( 1.138, 1.138 )
+position = Vector2( 217, 280 )
+scale = Vector2( 1.092, 1.066 )
 texture = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

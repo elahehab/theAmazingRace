@@ -36,15 +36,8 @@ func _on_Button_pressed():
 
 
 func _on_nextSceneBtn_pressed():
-	get_node("/root/global").countryTxt = 'THE PLACE OF THE ANCIENT AMUN-RA'
-	get_node("/root/global").cityTxt = 'WEST OF THE BANK OF THE NILE'
-	get_node("/root/global").monumentTxt = 'THE GRAND NECROPOLIS OF ANCIENT KINGS'
-	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-	get_node("/root/global").travelSceneNextScene = 'res://scenes/egypt/pyramidTitle.tscn'
+	get_node("/root/global").setEgyptRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
-
-
-
 
 func onColorPressed(num):
 	get_node(str(num)).visible = true

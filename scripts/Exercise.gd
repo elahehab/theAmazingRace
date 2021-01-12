@@ -6,7 +6,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	for i in range(1, 11):
+		get_node("exe"+str(i)).visible = false
+		get_node("Num"+str(i)).visible = false
+		get_node("l"+str(i)).visible = false
 
 
 func _on_color_1_pressed():
@@ -45,9 +48,13 @@ func onColorPressed(num):
 
 
 func _on_nextSceneBtn_pressed():
-	get_node("/root/global").countryTxt = 'THE WORLD\'S LARGEST ECONOMY'
-	get_node("/root/global").cityTxt = 'THE BLACK HILL REGION OF PENNINGTON COUNTY'
-	get_node("/root/global").monumentTxt = 'NAME OF FOUR **********'
-	get_node("/root/global").routeInfoNextScene = 'res://scenes/travelScene.tscn'
-	get_node("/root/global").travelSceneNextScene = 'res://scenes/usa/USATitle.tscn'
+	get_node("/root/global").setUSARouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
+
+
+func _on_color_45_pressed():
+	onColorPressed(9)
+
+
+func _on_color_10_pressed():
+	onColorPressed(10)
