@@ -42,7 +42,7 @@ func _on_tier3_pressed():
 	if(animFinished):
 		var cipher = CIPHER.instance()
 		cipher.cipherMode = 3
-		cipher.position = Vector2(153, 38)
+		cipher.position = Vector2(153, 20)
 		add_child(cipher)
 
 
@@ -50,7 +50,7 @@ func _on_tier2_pressed():
 	if(animFinished):
 		var cipher = CIPHER.instance()
 		cipher.cipherMode = 2
-		cipher.position = Vector2(153, 38)
+		cipher.position = Vector2(153, 20)
 		add_child(cipher)
 
 
@@ -58,7 +58,7 @@ func _on_tier1_pressed():
 	if(animFinished):
 		var cipher = CIPHER.instance()
 		cipher.cipherMode = 1
-		cipher.position = Vector2(153, 38)
+		cipher.position = Vector2(153, 20)
 		add_child(cipher)
 
 

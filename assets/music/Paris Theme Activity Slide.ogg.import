@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Paris Theme Activity Slide.ogg-486874112fd3dd92c000577cf057318e.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Paris Theme Activity Slide.ogg"
+dest_files=[ "res://.import/Paris Theme Activity Slide.ogg-486874112fd3dd92c000577cf057318e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

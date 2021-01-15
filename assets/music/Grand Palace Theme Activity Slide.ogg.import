@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Grand Palace Theme Activity Slide.ogg-0d8bfdafed1e551410be0168d10079d7.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Grand Palace Theme Activity Slide.ogg"
+dest_files=[ "res://.import/Grand Palace Theme Activity Slide.ogg-0d8bfdafed1e551410be0168d10079d7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

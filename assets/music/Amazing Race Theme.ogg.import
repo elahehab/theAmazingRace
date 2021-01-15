@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Amazing Race Theme.ogg-63635a7651039c663174400d35e58969.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Amazing Race Theme.ogg"
+dest_files=[ "res://.import/Amazing Race Theme.ogg-63635a7651039c663174400d35e58969.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

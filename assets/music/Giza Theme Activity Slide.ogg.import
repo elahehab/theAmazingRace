@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Giza Theme Activity Slide.ogg-647898b5fd82d22badba5d11794b41b9.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Giza Theme Activity Slide.ogg"
+dest_files=[ "res://.import/Giza Theme Activity Slide.ogg-647898b5fd82d22badba5d11794b41b9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

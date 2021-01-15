@@ -70,14 +70,14 @@ var pageNum = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_node("readyBtn").visible = false
 	loadNextFlag()
 
-func _on_Button_pressed():
-	loadNextFlag()
-	
 func loadNextFlag():
 	var keys = flags.keys()
 	if(index < keys.size()):
+		get_node("revealBtn").visible = true
+		get_node("readyBtn").visible = false
 		get_node("flagPic").visible = true
 		get_node("Num").visible = true
 		get_node("president").visible = false
@@ -94,6 +94,8 @@ func loadNextFlag():
 
 
 func _on_revealBtn_pressed():
+	get_node("readyBtn").visible = true
+	get_node("revealBtn").visible = false
 	get_node("flagPic").visible = false
 	get_node("Num").visible = false
 	get_node("president").visible = true
@@ -102,3 +104,7 @@ func _on_revealBtn_pressed():
 	var currentPresPic = keys[index-1]
 	get_node("president").texture = currentPresPic
 	get_node("presidentName").text = presidents[currentPresPic]
+
+
+func _on_readyBtn_pressed():
+	loadNextFlag()

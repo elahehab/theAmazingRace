@@ -15,4 +15,5 @@ func _ready():
 
 
 func _on_readyBtn_pressed():
+	get_node("/root/musicScene").stopGizaMusic()
 	get_tree().change_scene("res://scenes/egypt/hieroglyph.tscn")

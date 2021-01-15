@@ -6,10 +6,11 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	get_node("readyBtn").visible = false
 
-
-
-
-func _on_nextSceneBtn_pressed():
+func _on_readyBtn_pressed():
 	get_tree().change_scene("res://scenes/egypt/tiers.tscn")
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	get_node("readyBtn").visible = true

@@ -1,0 +1,81 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/lordOfTheRings.gd" type="Script" id=1]
+[ext_resource path="res://scenes/italy/italyBack.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/images/italy/LordOfTheRings.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "load"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LordOfTheRings:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=3]
+size = 27
+font_data = ExtResource( 4 )
+
+[node name="lordOfTheRings" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="italyBack" parent="." instance=ExtResource( 2 )]
+
+[node name="LordOfTheRings" type="Sprite" parent="."]
+position = Vector2( 519.122, 320.968 )
+scale = Vector2( 0.493366, 0.493366 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 415.953
+margin_top = 44.1615
+margin_right = 620.953
+margin_bottom = 117.162
+custom_fonts/font = SubResource( 1 )
+text = "THEME 1:
+LORD OF THE RINGS"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "load"
+anims/load = SubResource( 2 )
+
+[node name="readyBtn" parent="." instance=ExtResource( 5 )]
+margin_left = 874.0
+margin_top = 480.0
+margin_right = 968.0
+margin_bottom = 523.0
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

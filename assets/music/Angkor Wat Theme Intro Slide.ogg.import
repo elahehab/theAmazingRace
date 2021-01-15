@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Angkor Wat Theme Intro Slide.ogg-de1d00fd0c08aa8493b18131157975be.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Angkor Wat Theme Intro Slide.ogg"
+dest_files=[ "res://.import/Angkor Wat Theme Intro Slide.ogg-de1d00fd0c08aa8493b18131157975be.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

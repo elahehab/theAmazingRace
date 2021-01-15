@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scripts/VehicleDesc.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/whiteTrain.png" type="Texture" id=2]
@@ -46,6 +46,31 @@ font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=7]
 font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.980392, 0.701961, 0.0784314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=9]
+size = 18
+font_data = ExtResource( 4 )
 
 [node name="VehicleDesc" type="Node2D"]
 script = ExtResource( 1 )
@@ -158,4 +183,22 @@ custom_fonts/font = SubResource( 7 )
 custom_colors/font_color_hover = Color( 0.584314, 0.584314, 0.584314, 1 )
 text = "close"
 flat = true
+
+[node name="landingBtn" type="Button" parent="."]
+margin_left = 609.0
+margin_top = 315.0
+margin_right = 789.0
+margin_bottom = 387.0
+mouse_default_cursor_shape = 2
+custom_styles/hover = SubResource( 10 )
+custom_styles/normal = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CLICK TO LAND"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 20.0
+autostart = true
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="landingBtn" to="." method="_on_landingBtn_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

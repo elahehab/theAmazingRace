@@ -11,3 +11,13 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	get_node("/root/global").stopTimer()
+	get_node("Timer").wait_time = 30
+	get_node("Timer").start()
+
+
+func _on_Timer_timeout():
+	get_tree().change_scene("res://scenes/thailand/finalScene.tscn")

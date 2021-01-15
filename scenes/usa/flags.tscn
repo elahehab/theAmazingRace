@@ -28,15 +28,6 @@ script = ExtResource( 1 )
 
 [node name="USABack" parent="." instance=ExtResource( 2 )]
 
-[node name="Button" type="Button" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 960.0
-margin_top = 543.0
-margin_right = 1028.0
-margin_bottom = 598.0
-flat = true
-
 [node name="flagPic" type="Sprite" parent="."]
 position = Vector2( 357.715, 270.745 )
 scale = Vector2( 0.421389, 0.421389 )
@@ -91,5 +82,12 @@ text = "Reveal"
 
 [node name="guide" parent="." instance=ExtResource( 6 )]
 step = 5
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+[node name="readyBtn" parent="." instance=ExtResource( 5 )]
+margin_left = 463.611
+margin_top = 431.689
+margin_right = 547.611
+margin_bottom = 482.689
+text = "Next"
 [connection signal="pressed" from="revealBtn" to="." method="_on_revealBtn_pressed"]
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

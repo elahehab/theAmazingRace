@@ -19,8 +19,7 @@ texture = ExtResource( 2 )
 centered = false
 
 [node name="back1" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 0, -261 )
+modulate = Color( 1, 1, 1, 0.701961 )
 scale = Vector2( 1.061, 1 )
 texture = ExtResource( 2 )
 centered = false
@@ -28,8 +27,8 @@ region_enabled = true
 region_rect = Rect2( 0.48584, -1.15529, 967.96, 128.643 )
 
 [node name="back2" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 1.42468, -106.61 )
+modulate = Color( 1, 1, 1, 0.701961 )
+position = Vector2( 1.42468, 154.39 )
 scale = Vector2( 1.061, 1 )
 texture = ExtResource( 2 )
 centered = false
@@ -46,8 +45,8 @@ region_enabled = true
 region_rect = Rect2( 0.844727, 439.913, 967.96, 128.317 )
 
 [node name="back4" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 1.42468, 613.478 )
+modulate = Color( 1, 1, 1, 0.701961 )
+position = Vector2( 4.84949, 499.895 )
 scale = Vector2( 1.061, 1 )
 texture = ExtResource( 2 )
 centered = false
@@ -55,6 +54,7 @@ region_enabled = true
 region_rect = Rect2( -4.7343, 582.178, 973.539, 100.422 )
 
 [node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 101.01
 margin_top = 203.526
 margin_right = 930.01

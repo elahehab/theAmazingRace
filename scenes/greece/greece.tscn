@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/greece.gd" type="Script" id=1]
 [ext_resource path="res://scenes/greece/greeceBack.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/music/Acro Theme Activity Slide.ogg" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -138,4 +139,8 @@ autoplay = "mainLoadAnim (copy)"
 [node name="guide" parent="." instance=ExtResource( 7 )]
 position = Vector2( 0, -2 )
 step = 7
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
 [connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

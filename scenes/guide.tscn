@@ -133,7 +133,7 @@ func gotoUSA():
 	
 func gotoStart():
 	get_node(\"start\").showInfo()
-	get_tree().change_scene(\"res://scenes/WorldMap.tscn\")
+	get_tree().change_scene(\"res://scenes/instruction.tscn\")
 
 
 "

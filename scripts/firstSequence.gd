@@ -2,21 +2,25 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	setColorRectVisibel(false)
+	get_node("readyBtn").visible = false
+	setColorRectVisible(false)
 
 func _on_firstSeqBtn_pressed():
-	setColorRectVisibel(true)
+	get_node("Timer").start()
+	setColorRectVisible(true)
 
 
-func _on_endBtn_pressed():
-	setColorRectVisibel(false)
-
-
-func setColorRectVisibel(visibleVal):
+func setColorRectVisible(visibleVal):
 	var nodes = self.get_children()
 	for node in nodes:
 		if node is ColorRect:
 			node.visible = visibleVal
 
-func _on_nextSceneBtn_pressed():
+
+func _on_Timer_timeout():
+	setColorRectVisible(false)
+	get_node("readyBtn").visible = true
+
+
+func _on_readyBtn_pressed():
 	get_tree().change_scene("res://scenes/greece/secondSequence.tscn")

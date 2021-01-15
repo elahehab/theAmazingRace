@@ -14,4 +14,4 @@ func _ready():
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	get_tree().change_scene("res://scenes/instruction.tscn")
+	get_parent().get_parent().remove_child(get_parent())

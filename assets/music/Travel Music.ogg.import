@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Travel Music.ogg-5bba1e6fc4d1d577a3f4b25300a42466.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Travel Music.ogg"
+dest_files=[ "res://.import/Travel Music.ogg-5bba1e6fc4d1d577a3f4b25300a42466.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

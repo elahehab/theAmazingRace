@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Angkor Wat Theme Activity Slide.ogg-09cf409cdf9606a00197f3430eacf31b.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Angkor Wat Theme Activity Slide.ogg"
+dest_files=[ "res://.import/Angkor Wat Theme Activity Slide.ogg-09cf409cdf9606a00197f3430eacf31b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

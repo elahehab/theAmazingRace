@@ -1,6 +1,7 @@
 extends Node2D
 
 export var vehicleMode = 1 #1: plane, 2: train, 3: run
+var nextSceneAddress = ''
 var VEHICLE_DESC = preload("res://scenes/VehicleDesc.tscn")
 
 # Called when the node enters the scene tree for the first time.
@@ -31,5 +32,6 @@ func _ready():
 func _on_pickButton_pressed():
 	var desc = VEHICLE_DESC.instance()
 	desc.vehicleMode = self.vehicleMode
+	desc.nextSceneAddress = self.nextSceneAddress
 	desc.position = Vector2(98, 83)
 	get_parent().add_child(desc)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/travelScene.gd" type="Script" id=1]
 [ext_resource path="res://scenes/travel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/Vehicles.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/music/Travel Music.ogg" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 43
@@ -135,4 +136,8 @@ flat = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
 anims/load = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]

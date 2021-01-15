@@ -22,4 +22,5 @@ func _on_Button_mouse_exited():
 
 
 func _on_Button_pressed():
+	get_node("/root/global").startTimer()
 	get_tree().change_scene('res://scenes/WorldMap.tscn')

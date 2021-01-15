@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/fifthSequence.gd" type="Script" id=1]
 [ext_resource path="res://scenes/greece/greeceBack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 27
+font_data = ExtResource( 4 )
 
 [node name="fifthSequence" type="Node2D"]
 script = ExtResource( 1 )
@@ -136,13 +141,16 @@ margin_bottom = 433.2
 rect_scale = Vector2( 0.7, 0.7 )
 color = Color( 0, 0.431373, 1, 1 )
 
-[node name="nextSceneBtn" type="Button" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 942.0
-margin_top = 537.0
-margin_right = 1024.0
-margin_bottom = 599.0
-flat = true
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="readyBtn" parent="." instance=ExtResource( 3 )]
+margin_left = 892.0
+margin_top = 444.408
+margin_right = 977.0
+margin_bottom = 486.408
+custom_fonts/font = SubResource( 1 )
+text = "Next"
 [connection signal="pressed" from="firstSeqBtn" to="." method="_on_firstSeqBtn_pressed"]
-[connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

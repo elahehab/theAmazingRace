@@ -9,7 +9,7 @@ size = 160
 font_data = ExtResource( 3 )
 
 [sub_resource type="Animation" id=2]
-length = 4.0
+length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:modulate")
 tracks/0/interp = 1

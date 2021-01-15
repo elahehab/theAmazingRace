@@ -5,6 +5,9 @@ var cityTxt = ''
 var monumentTxt = ''
 var routeInfoNextScene = ''
 var travelSceneNextScene = ''
+var countryAnswer = ''
+var cityAnswer = ''
+var monumentANswer = ''
 var guideStep
 
 func setIndiaRouteInfo():
@@ -13,6 +16,9 @@ func setIndiaRouteInfo():
 	monumentTxt = 'THE GRAND BURIAL CHAMBER OF THE EMPEROR'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/tajmahal/TajMahalTitle.tscn'
+	countryAnswer = 'INDIA'
+	cityAnswer = 'AGRA'
+	monumentANswer = 'TAJ MAHAL'
 	guideStep = 1
 
 func setEgyptRouteInfo():
@@ -21,6 +27,9 @@ func setEgyptRouteInfo():
 	monumentTxt = 'THE GRAND NECROPOLIS OF ANCIENT KINGS'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/egypt/pyramidTitle.tscn'
+	countryAnswer = 'EGYPT'
+	cityAnswer = 'GIZA'
+	monumentANswer = 'GREAT PYRAMIDS'
 	guideStep = 2
 	
 func setCambodiaRouteInfo():
@@ -29,6 +38,9 @@ func setCambodiaRouteInfo():
 	monumentTxt = 'THE DEDICATED TEMPLE OF THE GOD VISHNU'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/cambodia/cambodiaTitle.tscn'
+	countryAnswer = 'CAMBODIA'
+	cityAnswer = 'SIAM REAP'
+	monumentANswer = 'ANGKOR WAT'
 	guideStep = 3
 
 func setUSARouteInfo():
@@ -37,6 +49,9 @@ func setUSARouteInfo():
 	monumentTxt = 'NAME OF FOUR **********'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/usa/USATitle.tscn'
+	countryAnswer = 'USA'
+	cityAnswer = 'KEYSTONE DAKOTA'
+	monumentANswer = 'MOUNT RUSHMORE'
 	guideStep = 4
 
 func setFranceRouteInfo():
@@ -45,6 +60,9 @@ func setFranceRouteInfo():
 	monumentTxt = 'THE "LA DAME DE FER" WHAT DOES IT STAND FOR?'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/france/franceTitle.tscn'
+	countryAnswer = 'FRANCE'
+	cityAnswer = 'PARIS'
+	monumentANswer = 'EIFFEL TOWER'
 	guideStep = 5
 
 func setGreeceRouteInfo():
@@ -53,6 +71,9 @@ func setGreeceRouteInfo():
 	monumentTxt = 'THE EXTREMITY CITADEL OF THE FIRST KING'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/greece/greeceTitle.tscn'
+	countryAnswer = 'GREECE'
+	cityAnswer = 'ATHENS'
+	monumentANswer = 'ACROPOLIS'
 	guideStep = 6
 	
 func setItalyRouteInfo():
@@ -61,6 +82,9 @@ func setItalyRouteInfo():
 	monumentTxt = 'THE FLAVIAN AMPHITHEATER'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/italy/italyTitle.tscn'
+	countryAnswer = 'ITALY'
+	cityAnswer = 'ROME'
+	monumentANswer = 'COLOSSUEM'
 	guideStep = 8
 
 func setThaiRouteInfo():
@@ -69,8 +93,32 @@ func setThaiRouteInfo():
 	monumentTxt = 'THE PRESIDENCE OF KINGS OF SIAM'
 	routeInfoNextScene = 'res://scenes/travelScene.tscn'
 	travelSceneNextScene = 'res://scenes/thailand/thailandTitle.tscn'
+	countryAnswer = 'THAILAND'
+	cityAnswer = 'BANGKOK'
+	monumentANswer = 'GRAND PALACE'
 	guideStep = 9
 	
+var time = 0
+var time_mult = 1.0
+var paused = false
+
+func _ready():
+	paused = true
+	set_process(true)
+	
+
+func startTimer():
+	paused = false
+	
+func stopTimer():
+	paused = true
+	
+func getTimeInSeconds():
+	return floor(time)
+
+func _process(delta):
+	if not paused:
+		time += delta * time_mult
 
 
 

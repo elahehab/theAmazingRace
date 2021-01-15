@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/avengers.gd" type="Script" id=1]
+[ext_resource path="res://scenes/italy/italyBack.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/images/italy/avengers.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/nextBtn.tscn" type="PackedScene" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "LOAD"
+tracks/0/type = "value"
+tracks/0/path = NodePath("avengers:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="avengers" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="italyBack" parent="." instance=ExtResource( 2 )]
+
+[node name="avengers" type="Sprite" parent="."]
+position = Vector2( 513.146, 310.04 )
+scale = Vector2( 0.635726, 0.635726 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 399.446
+margin_top = 42.2056
+margin_right = 630.446
+margin_bottom = 107.206
+custom_fonts/font = SubResource( 1 )
+text = "THEME 3:
+THE AVENGERS: ENDGAME"
+align = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "LOAD"
+anims/LOAD = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="readyBtn" parent="." instance=ExtResource( 5 )]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]

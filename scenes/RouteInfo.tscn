@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/RouteInfo.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/Amazing Race Title.png" type="Texture" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://assets/images/RouteInfoSmall.png" type="Texture" id=5]
 [ext_resource path="res://assets/fonts/tahoma20.tres" type="DynamicFont" id=6]
 [ext_resource path="res://assets/fonts/impact.tres" type="DynamicFont" id=7]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "startAnim"
@@ -324,6 +326,10 @@ tracks/25/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 9 )
+
 [node name="RouteInfo" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -346,13 +352,19 @@ scale = Vector2( 0.434874, 0.434874 )
 texture = ExtResource( 4 )
 
 [node name="RouteInfoSmall" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 534.941, 177.912 )
 scale = Vector2( 0.251019, 0.251019 )
 texture = ExtResource( 5 )
 
+[node name="coutryBtn" type="Button" parent="RouteInfoSmall"]
+margin_left = -373.0
+margin_top = -226.0
+margin_right = 378.0
+margin_bottom = 399.0
+mouse_default_cursor_shape = 2
+flat = true
+
 [node name="countryLabel" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 467.0
 margin_top = 137.0
 margin_right = 616.0
@@ -364,17 +376,16 @@ valign = 1
 autowrap = true
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-modulate = Color( 0, 0, 0, 0 )
-margin_left = 130.522
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 393.522
 margin_top = 65.0
-margin_right = 396.523
+margin_right = 659.523
 margin_bottom = 122.0
 
 [node name="Label" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 187.163
+margin_left = 450.163
 margin_top = 65.9466
-margin_right = 353.164
+margin_right = 616.164
 margin_bottom = 118.947
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -383,13 +394,19 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "COUNTRY"
 
 [node name="RouteInfoSmall2" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 841.169, 177.912 )
 scale = Vector2( 0.251019, 0.251019 )
 texture = ExtResource( 5 )
 
+[node name="cityBtn" type="Button" parent="RouteInfoSmall2"]
+margin_left = -392.0
+margin_top = -240.0
+margin_right = 371.0
+margin_bottom = 399.0
+mouse_default_cursor_shape = 2
+flat = true
+
 [node name="cityLabel" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 769.0
 margin_top = 137.0
 margin_right = 918.0
@@ -403,19 +420,18 @@ autowrap = true
 [node name="ColorRect3" type="ColorRect" parent="." groups=[
 "cityLabel",
 ]]
-modulate = Color( 0, 0, 0, 0 )
-margin_left = 537.357
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 711.357
 margin_top = 65.0
-margin_right = 803.357
+margin_right = 977.357
 margin_bottom = 122.0
 
 [node name="Label2" type="Label" parent="." groups=[
 "cityLabel",
 ]]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 590.998
+margin_left = 764.998
 margin_top = 65.9466
-margin_right = 746.998
+margin_right = 920.998
 margin_bottom = 118.947
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -425,15 +441,21 @@ text = "CITY"
 align = 1
 
 [node name="RouteInfoSmall3" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 684.092, 443.875 )
 scale = Vector2( 0.374294, 0.374294 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( -36.8246, 309.705, 864.646, 569.714 )
 
+[node name="monumentBtn" type="Button" parent="RouteInfoSmall3"]
+margin_left = -379.0
+margin_top = -236.0
+margin_right = 356.0
+margin_bottom = 208.0
+mouse_default_cursor_shape = 2
+flat = true
+
 [node name="monumentLabel" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 580.0
 margin_top = 372.0
 margin_right = 791.0
@@ -445,14 +467,13 @@ valign = 1
 autowrap = true
 
 [node name="ColorRect4" type="ColorRect" parent="."]
-modulate = Color( 0, 0, 0, 0 )
+modulate = Color( 0, 0, 0, 1 )
 margin_left = 489.0
 margin_top = 303.0
 margin_right = 870.999
 margin_bottom = 360.0
 
 [node name="Label3" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 579.904
 margin_top = 303.81
 margin_right = 781.904
@@ -471,15 +492,18 @@ autoplay = "startAnim"
 anims/startAnim = SubResource( 1 )
 
 [node name="Route Info-2" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 56.815, 290 )
+position = Vector2( 199.815, 290 )
 scale = Vector2( 0.309653, 0.309653 )
 texture = ExtResource( 4 )
 
-[node name="NextSceneBtn" type="Button" parent="."]
-margin_left = 944.071
-margin_top = 536.296
-margin_right = 1024.07
-margin_bottom = 597.296
-flat = true
-[connection signal="pressed" from="NextSceneBtn" to="." method="_on_NextSceneBtn_pressed"]
+[node name="next" parent="." instance=ExtResource( 8 )]
+margin_left = 855.319
+margin_top = 488.67
+margin_right = 1010.32
+margin_bottom = 539.67
+custom_fonts/font = SubResource( 2 )
+text = "time to travel"
+[connection signal="pressed" from="RouteInfoSmall/coutryBtn" to="." method="_on_coutryBtn_pressed"]
+[connection signal="pressed" from="RouteInfoSmall2/cityBtn" to="." method="_on_cityBtn_pressed"]
+[connection signal="pressed" from="RouteInfoSmall3/monumentBtn" to="." method="_on_monumentBtn_pressed"]
+[connection signal="pressed" from="next" to="." method="_on_next_pressed"]

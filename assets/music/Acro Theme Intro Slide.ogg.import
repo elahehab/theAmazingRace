@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Acro Theme Intro Slide.ogg-27043931c6533bbb62089e0e50c37b44.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Acro Theme Intro Slide.ogg"
+dest_files=[ "res://.import/Acro Theme Intro Slide.ogg-27043931c6533bbb62089e0e50c37b44.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

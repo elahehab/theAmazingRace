@@ -9,10 +9,7 @@ func _ready():
 	get_node("italyBack").get_node("Panel").modulate.a = 0
 	get_node("italyBack").get_node("AnimationPlayer").play("backAnim")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 
 func _on_readyBtn_pressed():
-	get_tree().change_scene("res://scenes/italy/battle1.tscn")
+	get_node("/root/musicScene").stopColoMusic()
+	get_tree().change_scene("res://scenes/italy/jurassic.tscn")
