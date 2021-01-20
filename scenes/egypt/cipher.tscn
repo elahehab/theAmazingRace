@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/cipher.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/pyramid/E3.png" type="Texture" id=2]
 [ext_resource path="res://assets/images/pyramid/E2.png" type="Texture" id=3]
 [ext_resource path="res://assets/images/pyramid/E1.png" type="Texture" id=4]
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.219608, 0.219608, 0.219608, 1 )
@@ -31,6 +32,10 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
 font_data = ExtResource( 5 )
 
 [node name="cipher" type="Node2D"]
@@ -67,4 +72,24 @@ custom_styles/normal = SubResource( 2 )
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "CLOSE"
+
+[node name="revealBtn" parent="." instance=ExtResource( 6 )]
+margin_left = -450.95
+margin_top = 233.825
+margin_right = -235.95
+margin_bottom = 284.825
+rect_rotation = 90.0
+text = "Reveal"
+
+[node name="Label" type="Label" parent="."]
+margin_left = -395.0
+margin_top = 1.0
+margin_right = 311.0
+margin_bottom = 44.0
+rect_rotation = 90.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
 [connection signal="pressed" from="closeBtn" to="." method="_on_closeBtn_pressed"]
+[connection signal="pressed" from="revealBtn" to="." method="_on_revealBtn_pressed"]

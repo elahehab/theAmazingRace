@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/tiers.gd" type="Script" id=1]
 [ext_resource path="res://scenes/egypt/pyramidBack.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/images/pyramid/tier2.png" type="Texture" id=5]
 [ext_resource path="res://assets/images/pyramid/tier3.png" type="Texture" id=6]
+[ext_resource path="res://scenes/nextBtn.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -152,16 +153,11 @@ text = "TIER 1"
 align = 1
 valign = 1
 
-[node name="nextSceneBtn" type="Button" parent="."]
-margin_left = 951.218
-margin_top = 527.426
-margin_right = 1024.22
-margin_bottom = 599.426
-flat = true
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
 anims/load = SubResource( 2 )
+
+[node name="nextBtn" parent="." instance=ExtResource( 7 )]
 [connection signal="mouse_entered" from="tier3" to="." method="_on_tier3_mouse_entered"]
 [connection signal="mouse_exited" from="tier3" to="." method="_on_tier3_mouse_exited"]
 [connection signal="pressed" from="tier3" to="." method="_on_tier3_pressed"]
@@ -171,5 +167,5 @@ anims/load = SubResource( 2 )
 [connection signal="mouse_entered" from="tier1" to="." method="_on_tier1_mouse_entered"]
 [connection signal="mouse_exited" from="tier1" to="." method="_on_tier1_mouse_exited"]
 [connection signal="pressed" from="tier1" to="." method="_on_tier1_pressed"]
-[connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="pressed" from="nextBtn" to="." method="_on_nextBtn_pressed"]

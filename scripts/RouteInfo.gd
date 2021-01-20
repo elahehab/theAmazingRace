@@ -7,6 +7,7 @@ var monRevealed = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_node("/root/musicScene").stopAll()
 	get_node("/root/global").startTimer()
 	print(get_node("/root/global").getTimeInSeconds())
 	get_node("next").visible = false;

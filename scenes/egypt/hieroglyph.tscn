@@ -200,7 +200,6 @@ margin_bottom = 177.617
 custom_styles/panel = SubResource( 11 )
 
 [node name="Hiero" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 513.736, 340 )
 scale = Vector2( 0.660229, 0.660229 )
 texture = ExtResource( 4 )
