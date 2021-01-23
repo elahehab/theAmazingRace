@@ -16,3 +16,7 @@ func _ready():
 
 func _on_readyBtn_pressed():
 	get_tree().change_scene("res://scenes/cambodia/Exercise.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/cambodia/Exercise.tscn")

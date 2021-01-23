@@ -76,3 +76,8 @@ func checkAndShowNextBtn():
 func _on_nextBtn_pressed():
 	get_node("/root/global").setCambodiaRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/global").setCambodiaRouteInfo()
+	get_tree().change_scene("res://scenes/RouteInfo.tscn")

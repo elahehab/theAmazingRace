@@ -19,3 +19,7 @@ func _on_Timer_timeout():
 
 func _on_readyBtn_pressed():
 	get_tree().change_scene("res://scenes/italy/starwars.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/italy/starwars.tscn")

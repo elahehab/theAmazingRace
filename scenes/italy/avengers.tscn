@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/avengers.gd" type="Script" id=1]
 [ext_resource path="res://scenes/italy/italyBack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/images/italy/avengers.jpg" type="Texture" id=3]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://scenes/nextBtn.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -66,5 +67,8 @@ wait_time = 5.0
 autostart = true
 
 [node name="readyBtn" parent="." instance=ExtResource( 5 )]
+
+[node name="SkipBtn" parent="." instance=ExtResource( 6 )]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

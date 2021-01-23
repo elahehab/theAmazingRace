@@ -13,9 +13,6 @@ func _ready():
 #	pass
 
 
-func _on_AnimationPlayer_animation_finished(anim_name):
-	get_tree().change_scene("res://scenes/cambodia/cambodia.tscn")
-
-
 func _on_SkipBtn_pressed():
-	get_tree().change_scene("res://scenes/cambodia/cambodia.tscn")
+	get_node("/root/global").startTimer()
+	get_tree().change_scene('res://scenes/WorldMap.tscn')

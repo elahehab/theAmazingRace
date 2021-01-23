@@ -13,3 +13,8 @@ func _ready():
 func _on_readyBtn_pressed():
 	get_node("/root/musicScene").stopColoMusic()
 	get_tree().change_scene("res://scenes/italy/jurassic.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/musicScene").stopColoMusic()
+	get_tree().change_scene("res://scenes/italy/jurassic.tscn")

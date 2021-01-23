@@ -14,3 +14,7 @@ func _on_readyBtn_pressed():
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	get_node("readyBtn").visible = true
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/egypt/tiers.tscn")

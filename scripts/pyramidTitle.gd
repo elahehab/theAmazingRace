@@ -15,3 +15,7 @@ func _ready():
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	get_tree().change_scene("res://scenes/egypt/pyramid.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/egypt/pyramid.tscn")

@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/roadBlock.gd" type="Script" id=1]
 [ext_resource path="res://scenes/roadBlock/roadBlockBack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://assets/fonts/tahoma.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/images/roadBlock/Road Block.png" type="Texture" id=5]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -108,4 +109,7 @@ anims/load = SubResource( 3 )
 position = Vector2( 217, 280 )
 scale = Vector2( 1.09181, 1.06605 )
 texture = ExtResource( 5 )
+
+[node name="SkipBtn" parent="." instance=ExtResource( 6 )]
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

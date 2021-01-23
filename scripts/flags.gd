@@ -108,3 +108,7 @@ func _on_revealBtn_pressed():
 
 func _on_readyBtn_pressed():
 	loadNextFlag()
+
+
+func _on_SkipBtn_pressed():
+	loadNextFlag()

@@ -11,3 +11,8 @@ func _ready():
 func _on_nextSceneBtn_pressed():
 	get_node("/root/global").setGreeceRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/global").setGreeceRouteInfo()
+	get_tree().change_scene("res://scenes/RouteInfo.tscn")

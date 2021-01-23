@@ -81,3 +81,8 @@ func _on_color45_pressed():
 
 func _on_color10_pressed():
 	onColorPressed(10)
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/global").setEgyptRouteInfo()
+	get_tree().change_scene("res://scenes/RouteInfo.tscn")

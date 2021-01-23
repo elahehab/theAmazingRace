@@ -54,3 +54,8 @@ func checkAndShowReadyBtn():
 func _on_readyBtn_pressed():
 	get_node("/root/global").setUSARouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/global").setUSARouteInfo()
+	get_tree().change_scene("res://scenes/RouteInfo.tscn")

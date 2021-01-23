@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/pyramidTitle.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/pyramid/pyramid.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/titlePageAnim.tres" type="Animation" id=4]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 120
@@ -201,4 +202,7 @@ align = 1
 autoplay = "titlePageAnim (copy)"
 anims/titlePageAnim = ExtResource( 4 )
 "anims/titlePageAnim (copy)" = SubResource( 2 )
+
+[node name="SkipBtn" parent="." instance=ExtResource( 5 )]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

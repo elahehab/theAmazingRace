@@ -15,3 +15,7 @@ func _ready():
 
 func _on_readyBtn_pressed():
 	get_tree().change_scene("res://scenes/italy/lordOfTheRings.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/italy/lordOfTheRings.tscn")

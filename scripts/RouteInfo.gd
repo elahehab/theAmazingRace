@@ -40,3 +40,8 @@ func showNextBtnIfReady():
 func _on_next_pressed():
 	var nextScene = get_node("/root/global").routeInfoNextScene
 	get_tree().change_scene(nextScene)
+
+
+func _on_SkipBtn_pressed():
+	var nextScene = get_node("/root/global").routeInfoNextScene
+	get_tree().change_scene(nextScene)

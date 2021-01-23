@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/fifthSequence.gd" type="Script" id=1]
 [ext_resource path="res://scenes/greece/greeceBack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 27
@@ -151,6 +152,9 @@ margin_right = 977.0
 margin_bottom = 486.408
 custom_fonts/font = SubResource( 1 )
 text = "Next"
+
+[node name="SkipBtn" parent="." instance=ExtResource( 5 )]
 [connection signal="pressed" from="firstSeqBtn" to="." method="_on_firstSeqBtn_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="pressed" from="readyBtn" to="." method="_on_readyBtn_pressed"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

@@ -17,3 +17,8 @@ func _ready():
 func _on_readyBtn_pressed():
 	get_node("/root/musicScene").stopUSAMusic()
 	get_tree().change_scene("res://scenes/usa/flags.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/musicScene").stopUSAMusic()
+	get_tree().change_scene("res://scenes/usa/flags.tscn")

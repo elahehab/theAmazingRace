@@ -22,3 +22,8 @@ func showGoBtn():
 func _on_readyBtn_pressed():
 	get_node("/root/global").setIndiaRouteInfo()
 	get_tree().change_scene("res://scenes/RouteInfo.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_node("/root/global").setIndiaRouteInfo()
+	get_tree().change_scene("res://scenes/RouteInfo.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/RouteInfo.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/Amazing Race Title.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://assets/fonts/impact.tres" type="DynamicFont" id=7]
 [ext_resource path="res://scenes/readyBtn.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=10]
+
 
 [sub_resource type="Animation" id=1]
 resource_name = "startAnim"
@@ -502,8 +504,11 @@ margin_top = 488.67
 margin_right = 1010.32
 margin_bottom = 539.67
 custom_fonts/font = SubResource( 2 )
-text = "time to travel"
+text = "TIME TO TRAVEL"
+
+[node name="SkipBtn" parent="." instance=ExtResource( 10 )]
 [connection signal="pressed" from="RouteInfoSmall/coutryBtn" to="." method="_on_coutryBtn_pressed"]
 [connection signal="pressed" from="RouteInfoSmall2/cityBtn" to="." method="_on_cityBtn_pressed"]
 [connection signal="pressed" from="RouteInfoSmall3/monumentBtn" to="." method="_on_monumentBtn_pressed"]
 [connection signal="pressed" from="next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

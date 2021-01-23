@@ -12,3 +12,7 @@ func _ready():
 
 func _on_nextSceneBtn_pressed():
 	get_tree().change_scene(get_node("/root/global").travelSceneNextScene)
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene(get_node("/root/global").travelSceneNextScene)

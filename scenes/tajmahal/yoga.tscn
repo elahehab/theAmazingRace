@@ -1,19 +1,20 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://scripts/yoga.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/India Taj Mahal.jpg" type="Texture" id=2]
-[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://assets/images/yoga/1.png" type="Texture" id=4]
-[ext_resource path="res://assets/images/yoga/2.png" type="Texture" id=5]
-[ext_resource path="res://assets/images/yoga/3.png" type="Texture" id=6]
-[ext_resource path="res://assets/images/yoga/4.png" type="Texture" id=7]
-[ext_resource path="res://assets/images/yoga/55.png" type="Texture" id=8]
-[ext_resource path="res://assets/images/yoga/5.png" type="Texture" id=9]
-[ext_resource path="res://assets/images/yoga/6.png" type="Texture" id=10]
-[ext_resource path="res://assets/images/yoga/7.png" type="Texture" id=11]
-[ext_resource path="res://assets/images/yoga/8.png" type="Texture" id=12]
-[ext_resource path="res://assets/images/yoga/10.png" type="Texture" id=13]
-[ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/images/yoga/1.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/yoga/2.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/yoga/3.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/yoga/4.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/yoga/55.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/yoga/5.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/yoga/6.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/yoga/7.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/yoga/8.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/yoga/10.png" type="Texture" id=12]
+[ext_resource path="res://scenes/guide.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=15]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.819608 )
@@ -28,164 +29,142 @@ corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.278431, 0.27451, 0.27451, 1 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color( 0.980392, 0.701961, 0.0784314, 1 )
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0, 0, 0, 1 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color( 0.980392, 0.701961, 0.0784314, 1 )
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="DynamicFont" id=4]
-size = 36
-font_data = ExtResource( 3 )
-
-[sub_resource type="StyleBoxFlat" id=5]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=6]
+[sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.278431, 0, 0.670588, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=4]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=8]
+[sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0, 0.431373, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=9]
+[sub_resource type="StyleBoxFlat" id=6]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=10]
+[sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.25098, 0.713726, 0.12549, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=11]
+[sub_resource type="StyleBoxFlat" id=8]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=12]
+[sub_resource type="StyleBoxFlat" id=9]
 bg_color = Color( 0.929412, 0.164706, 0, 1 )
+border_color = Color( 0.466667, 0.466667, 0.466667, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=13]
+[sub_resource type="StyleBoxFlat" id=10]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=14]
+[sub_resource type="StyleBoxFlat" id=11]
 bg_color = Color( 1, 0.0862745, 0.580392, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=15]
+[sub_resource type="StyleBoxFlat" id=12]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=16]
+[sub_resource type="StyleBoxFlat" id=13]
 bg_color = Color( 1, 1, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=17]
+[sub_resource type="StyleBoxFlat" id=14]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=18]
+[sub_resource type="StyleBoxFlat" id=15]
 bg_color = Color( 1, 0.584314, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=19]
+[sub_resource type="StyleBoxFlat" id=16]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=20]
+[sub_resource type="StyleBoxFlat" id=17]
 bg_color = Color( 0, 0.815686, 1, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=21]
+[sub_resource type="StyleBoxFlat" id=18]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=22]
+[sub_resource type="StyleBoxFlat" id=19]
 bg_color = Color( 0.956863, 0.929412, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=23]
+[sub_resource type="StyleBoxFlat" id=20]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=24]
+[sub_resource type="StyleBoxFlat" id=21]
 bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.466667, 0.466667, 0.466667, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=22]
 tracks/0/type = "value"
 tracks/0/path = NodePath("color8:modulate")
 tracks/0/interp = 1
@@ -307,6 +286,10 @@ tracks/9/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
+[sub_resource type="DynamicFont" id=23]
+size = 49
+font_data = ExtResource( 14 )
+
 [node name="yoga" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -323,187 +306,165 @@ margin_right = 1005.0
 margin_bottom = 551.0
 custom_styles/panel = SubResource( 1 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 286.26
-margin_top = 28.948
-margin_right = 707.26
-margin_bottom = 98.948
-mouse_default_cursor_shape = 2
-custom_styles/hover = SubResource( 2 )
-custom_styles/normal = SubResource( 3 )
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "CHOOSE YOUR COLOURS"
-
 [node name="1" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 67, 109.819 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 centered = false
 
 [node name="color1" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 51.0
 margin_top = 294.0
 margin_right = 223.0
 margin_bottom = 314.0
-custom_styles/hover = SubResource( 5 )
-custom_styles/normal = SubResource( 6 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
 
 [node name="2" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 248, 109.819 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 centered = false
 
 [node name="color2" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 239.0
 margin_top = 294.0
 margin_right = 411.0
 margin_bottom = 314.0
-custom_styles/hover = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
 
 [node name="3" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 435, 109.819 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 centered = false
 
 [node name="color3" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 425.0
 margin_top = 294.0
 margin_right = 597.0
 margin_bottom = 314.0
-custom_styles/hover = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
 
 [node name="4" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 626, 110.235 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 centered = false
 
 [node name="color4" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 616.0
 margin_top = 294.0
 margin_right = 788.0
 margin_bottom = 314.0
-custom_styles/hover = SubResource( 11 )
-custom_styles/normal = SubResource( 12 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
 
 [node name="45" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 813, 110.235 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 centered = false
 
 [node name="color45" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 803.0
 margin_top = 294.0
 margin_right = 975.0
 margin_bottom = 314.0
-custom_styles/hover = SubResource( 13 )
-custom_styles/normal = SubResource( 14 )
+custom_styles/hover = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 
 [node name="5" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 67, 336.923 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 centered = false
 
 [node name="color5" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 51.0
 margin_top = 516.0
 margin_right = 223.0
 margin_bottom = 536.0
-custom_styles/hover = SubResource( 15 )
-custom_styles/normal = SubResource( 16 )
+custom_styles/hover = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
 
 [node name="6" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 248, 336.923 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 centered = false
 
 [node name="color6" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 239.0
 margin_top = 516.0
 margin_right = 411.0
 margin_bottom = 536.0
-custom_styles/hover = SubResource( 17 )
-custom_styles/normal = SubResource( 18 )
+custom_styles/hover = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
 
 [node name="7" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 435, 336.923 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 centered = false
 
 [node name="color7" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 425.0
 margin_top = 516.0
 margin_right = 597.0
 margin_bottom = 536.0
-custom_styles/hover = SubResource( 19 )
-custom_styles/normal = SubResource( 20 )
+custom_styles/hover = SubResource( 16 )
+custom_styles/normal = SubResource( 17 )
 
 [node name="8" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 626, 336.923 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 12 )
+texture = ExtResource( 11 )
 centered = false
 
 [node name="color8" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 616.0
 margin_top = 516.0
 margin_right = 788.0
 margin_bottom = 536.0
-custom_styles/hover = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
+custom_styles/hover = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
 
 [node name="10" type="Sprite" parent="." groups=[
 "yogaFigure",
 ]]
 position = Vector2( 809, 336.923 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 13 )
+texture = ExtResource( 12 )
 centered = false
 
 [node name="color10" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 799.0
 margin_top = 516.0
 margin_right = 971.0
 margin_bottom = 536.0
-custom_styles/hover = SubResource( 23 )
-custom_styles/normal = SubResource( 24 )
+custom_styles/hover = SubResource( 20 )
+custom_styles/normal = SubResource( 21 )
 
 [node name="nextSceneBtn" type="Button" parent="."]
 margin_left = 942.841
@@ -514,11 +475,22 @@ flat = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "load"
-anims/load = SubResource( 25 )
+anims/load = SubResource( 22 )
 
-[node name="guide" parent="." instance=ExtResource( 14 )]
+[node name="guide" parent="." instance=ExtResource( 13 )]
 step = 2
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 261.035
+margin_top = 33.1163
+margin_right = 713.035
+margin_bottom = 94.1163
+custom_fonts/font = SubResource( 23 )
+text = "CHOOSE YOUR COLOURS"
+align = 1
+valign = 1
+
+[node name="SkipBtn" parent="." instance=ExtResource( 15 )]
 [connection signal="pressed" from="color1" to="." method="_on_color1_pressed"]
 [connection signal="pressed" from="color2" to="." method="_on_color2_pressed"]
 [connection signal="pressed" from="color3" to="." method="_on_color3_pressed"]
@@ -530,3 +502,4 @@ step = 2
 [connection signal="pressed" from="color8" to="." method="_on_color8_pressed"]
 [connection signal="pressed" from="color10" to="." method="_on_color10_pressed"]
 [connection signal="pressed" from="nextSceneBtn" to="." method="_on_nextSceneBtn_pressed"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

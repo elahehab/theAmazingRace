@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/USATitle.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/usa/Mount-Rushmore-National-Memorial.jpg" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/impact.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scenes/SkipBtn.tscn" type="PackedScene" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 120
@@ -202,4 +203,7 @@ autowrap = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "LabelAnim (copy)"
 "anims/LabelAnim (copy)" = SubResource( 2 )
+
+[node name="SkipBtn" parent="." instance=ExtResource( 4 )]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="pressed" from="SkipBtn" to="." method="_on_SkipBtn_pressed"]

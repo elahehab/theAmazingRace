@@ -142,51 +142,51 @@ func gotoStart():
 script = SubResource( 1 )
 
 [node name="thai" parent="." instance=ExtResource( 1 )]
-position = Vector2( 925, 558.204 )
+position = Vector2( 921, 560.204 )
 flagFile = ExtResource( 2 )
 flagTxt = "THE GRAND PALACE"
 
 [node name="italy" parent="." instance=ExtResource( 1 )]
-position = Vector2( 825, 558.204 )
+position = Vector2( 821, 560.204 )
 flagFile = ExtResource( 3 )
 flagTxt = "COLOSSEUM"
 
 [node name="roadBlock" parent="." instance=ExtResource( 1 )]
-position = Vector2( 717, 558.204 )
+position = Vector2( 713, 560.204 )
 flagFile = ExtResource( 4 )
 flagTxt = "ROAD BLOCK"
 
 [node name="greece" parent="." instance=ExtResource( 1 )]
-position = Vector2( 609, 558.204 )
+position = Vector2( 606, 560.204 )
 flagFile = ExtResource( 5 )
 flagTxt = "ACROPOLIS"
 
 [node name="france" parent="." instance=ExtResource( 1 )]
-position = Vector2( 501, 558.204 )
+position = Vector2( 498, 560.204 )
 flagFile = ExtResource( 6 )
 flagTxt = "EIFFEL TOWER"
 
 [node name="usa" parent="." instance=ExtResource( 1 )]
-position = Vector2( 393, 558.204 )
+position = Vector2( 391, 560.204 )
 flagFile = ExtResource( 7 )
 flagTxt = "MOUNT RUSHMORE"
 
 [node name="cambodia" parent="." instance=ExtResource( 1 )]
-position = Vector2( 285, 558.204 )
+position = Vector2( 284, 560.204 )
 flagFile = ExtResource( 8 )
 flagTxt = "ANGKOR WAT"
 
 [node name="egypt" parent="." instance=ExtResource( 1 )]
-position = Vector2( 177, 558.204 )
+position = Vector2( 177, 560.204 )
 flagFile = ExtResource( 9 )
 flagTxt = "GREAT PYRAMIDS"
 
 [node name="india" parent="." instance=ExtResource( 1 )]
-position = Vector2( 70.6351, 558.204 )
+position = Vector2( 70.6351, 560.204 )
 flagFile = ExtResource( 10 )
 flagTxt = "TAJ MAHAL"
 
 [node name="start" parent="." instance=ExtResource( 1 )]
-position = Vector2( -31.3649, 558.204 )
+position = Vector2( -31.3649, 560.204 )
 flagFile = ExtResource( 11 )
 flagTxt = "STARTING ACTIVITY"

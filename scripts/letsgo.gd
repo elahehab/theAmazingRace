@@ -21,3 +21,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 
 func _on_Timer_timeout():
 	get_tree().change_scene("res://scenes/thailand/finalScene.tscn")
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/thailand/finalScene.tscn")

@@ -24,3 +24,7 @@ func _on_readyBtn_pressed():
 func _on_Timer_timeout():
 	get_node("readyBtn").visible = true
 	setColorRectVisibel(false)
+
+
+func _on_SkipBtn_pressed():
+	get_tree().change_scene("res://scenes/greece/thirdSequence.tscn")
